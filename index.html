@@ -1,29 +1,92 @@
 <html>
 	<head>
 		<meta charset = "utf-8">
+		<title>Smart Factory</title>
+		<link rel="icon" type="image/jpg" href="./img/tico.png" sizes="16x16">
 		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/scriptIndex.js"></script>
+		<script type="text/javascript" src="./js/lang/langIndex.js"></script>
 		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initialscale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/estiloIndex.css">
 	</head>
 	<body>
 		<div class="row">
 			<header id = "cabecalho">
-					<h1></h1>
+					<h1 id="titulo">Sis<img src="img/t.png">ema de Vendas</h1>
 			</header>
 		</div>
 		<div class="row">
 			<section id="menu">
-
+				<button id="tradutor" class="btn"><img id="imgBandeira" src="img/eua.png"></button>
+				<a href="cadastro.html"><button id="btnCadastrar" class="btn">Cadastrar</button></a>
+				<button id="btnEntrar" class="btn">Entrar</button>
 			</section>
 		</div>
 		<div class="row">
 			<section id="pesquisa">
-
+				<input type="text" name="pesquisar" value="" class="floatRight">
+				<a href="resultado.html"><button type="button" name="enviaPesquisa" class="floatRight">Buscar</button></a>
 			</section>
 		</div>
+
+		<section id="banner">
+			<div id="carrosel" class="owl-carousel owl-theme">
+
+				<a href="#">
+					<div id="carro1" class="item"><img src="./img/carrossel/0.png" alt=""></div>
+				</a>
+				<a href="#">
+					<div id="carro2" class="item"><img src="./img/carrossel/1.png" alt=""></div>
+				</a>
+				<a href="#">
+					<div id="carro3" class="item"><img src="./img/carrossel/2.png" alt=""></div>
+				</a>
+				<a href="#">
+					<div id="carro4" class="item"><img src="./img/carrossel/3.png" alt=""></div>
+				</a>
+			</div>
+		</section>
+
 		<div class="row">
-			<section>
+			<section id="produtos">
+				<section id="produto1" class="prod">
+					<div id="imgProduto">
+						<img src="img/produtoMagenta.gif" alt="Produto Magenta">
+					</div>
+					<div id="chamadaProduto">
+						<p class="chamada">Conheça a nossa linha<br> Luxo Magenta: </p>
+					</div>
+					<div id="btnProduto">
+						<button class="bots saiba" onclick="desc(1)">Saiba Mais</button>
+					</div>
+				</section>
+
+				<section id="produto2" class="prod">
+					<div id="imgProduto">
+						<img src="img/produtoAzul.gif" alt="Produto Azul">
+					</div>
+					<div id="chamadaProduto">
+						<p class="chamada">Conheça a nossa linha<br> Luxo Azul: </p>
+					</div>
+					<div id="btnProduto">
+						<button class="bots saiba" onclick="desc(2)">Saiba Mais</button>
+					</div>
+				</section>
+
+				<section id="produto3" class="prod">
+					<div id="imgProduto">
+						<img src="img/produtoBranco.gif" alt="Produto Branco">
+					</div>
+					<div id="chamadaProduto">
+						<p class="chamada">Conheça a nossa linha<br> Luxo Branco: </p>
+					</div>
+					<div id="btnProduto">
+						<button class="bots saiba" onclick="desc(3)">Saiba Mais</button>
+					</div>
+				</section>
+			</section>
 
 			</section>
 		</div>
@@ -33,5 +96,36 @@
 
 			</footer>
 		</div>
+
+		<div id="entrar">
+			<form>
+				<div class='form-group'>
+					<label id="labelLogin" for="login">Login: </label>
+					<input type="text" id="login" class="form-control itens" name="login" placeholder="Coloque o seu nome de login aqui">				<span id="erroNome" class="erro"></span><br/>
+				</div>
+				<div class='form-group'>
+					<label id="labelSenha" for="senha">Senha: </label>
+					<input type="password" id="senha" class="form-control itens" name="senha" placeholder="Digite sua senha aqui">
+					<span
+					    id="erroSenha" class="erro"></span><br/>
+				</div>
+
+				<div class='form-group'>
+					<button id="botLogin" class="bot">Login</button>
+					<div id="botEsqueci">
+						<a href="#">Esqueci minha Senha</a>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div id="descProduto">
+		</div>
+
+		<div id="tudo">
+			<button id="x">X</button>
+		</div>
+
+
 	</body>
 </html>

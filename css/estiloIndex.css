@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Pacifico|Source+Sans+Pro');
+
+@media screen and (min-width: 700px){
+  body{
+    position: absolute;
+    top: 0px;
+    margin: 0px;
+    background-color: white;
+    font-family: 'Source Sans Pro';
+  }
+  #cabecalho{
+    position:  relative;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    left: 50%;
+    width: 500px;
+    margin-left: -250px;
+    background-color: blue;
+    font-size: 28px;
+    font-family: 'Amatic SC';
+  }
+  #menu{
+    position: relative;
+    align-items: center;
+    left: 50%;
+    width: 600px;
+    height: 50px;
+    float: left;
+  }
+  #pesquisa{
+    position: relative;
+    height: 50px;
+    float: right;
+  }
+  #banner{
+    clear: both;
+    position: relative;
+    top: 10px;
+    width: 600px;
+    height: 150px;
+    left: 50%;
+    margin-left: -300px;
+    background-color: pink;
+    -webkit-box-shadow: 6px 6px 26px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 26px -1px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 26px -1px rgba(0,0,0,0.75);
+  }
+  #produtos{
+    position:relative;
+    top: 30px;
+    width: 1000px;
+    height: 500px;
+    left: 50%;
+    margin-left: -500px;
+  }
+  #tudo{
+    top: 0px;
+    margin-left:  0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    display: none;
+    z-index: 3;
+  }
+  #x{
+    background-color: transparent;
+    color: white;
+    margin: 0px;
+    border: 0px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #entrar{
+    top: 120px;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: 50%;
+    padding-top: 200px;
+    margin-left: -500px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 20px;
+    color: white;
+    z-index: 7;
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px){
+
+}
+@media screen and (min-width: 1200px) {
+  body{
+    top: 0px;
+    margin: 30px;
+    background-color: white;
+  	font-family: 'Source Sans Pro';
+  }
+  #cabecalho{
+  	position:  relative;
+  	text-align:  center;
+  	padding-top: 10px;
+  	padding-bottom: 2px;
+  	font-size: 28px;
+  	font-family: 'Amatic SC';
+  }
+  #menu{
+    position: relative;
+    align-items: center;
+    left: 50%;
+    width: 1000px;
+    height: 50px;
+    float: left;
+  }
+  #pesquisa{
+    position: relative;
+    height: 50px;
+    float: right;
+  }
+  #banner{
+  	clear: both;
+  	position: relative;
+  	top: 10px;
+  	width: 1000px;
+  	height: 150px;
+  	left: 50%;
+  	margin-left: -500px;
+    background-color: pink;
+  	-webkit-box-shadow: 6px 6px 26px -1px rgba(0,0,0,0.75);
+  	-moz-box-shadow: 6px 6px 26px -1px rgba(0,0,0,0.75);
+  	box-shadow: 6px 6px 26px -1px rgba(0,0,0,0.75);
+  }
+  #produtos{
+  	position:relative;
+  	top: 30px;
+  	width: 1000px;
+  	height: 500px;
+    left: 50%;
+  	margin-left: -500px;
+  }
+  #tudo{
+  	top: 0px;
+  	margin-left:  0px;
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	background-color: black;
+  	opacity: 0.8;
+  	display: none;
+  	z-index: 3;
+  }
+  #x{
+  	background-color: transparent;
+  	color: white;
+  	margin: 0px;
+  	border: 0px;
+  	font-size: 20px;
+  	cursor: pointer;
+  }
+  #entrar{
+  	top: 120px;
+  	position: absolute;
+  	width: 600px;
+  	height: 400px;
+  	left: 50%;
+  	padding-top: 200px;
+  	margin-left: -500px;
+  	padding-left: 200px;
+  	padding-right: 200px;
+  	font-size: 20px;
+  	color: white;
+  	z-index: 7;
+  	display: none;
+  }
+}
