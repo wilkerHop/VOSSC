@@ -4,18 +4,27 @@
 <head>
 	<title></title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-
+	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- Carousel -->
+	<link type="text/css" rel="stylesheet" href="./owl-carousel/owl.theme.css">
+	<link type="text/css" rel="stylesheet" href="./owl-carousel/owl.carousel.css">
+	<link type="text/css" rel="stylesheet" href="./owl-carousel/owl.transitions.css">
+	<script type="text/javascript" src="./owl-carousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="./owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="./js/owl.carousel.js"></script>
+	<!-- /Carousel  -->
+	
 </head>
 
 <body>
 	<div class="container">
-		<br><br><br>
 		
 		<nav class="navbar navbar-default" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -56,35 +65,33 @@
 			</div><!-- /.navbar-collapse -->
 		</nav>
 		
-		<!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<a class="navbar-brand" href="#">VOSSC</a>
-			<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#">Entrar</a>
-				</li>
-				<li>
-					<a href="#">Cadastro</a>
-				</li>
-			</ul>
-		</nav> -->
-		
 		<h1> PRODUTOS </h1>
+		<div id="carrosel" class="owl-carousel owl-theme">
+
+			<a href="#">
+				<div id="carro1" class="item"><img class="img-responsive" src="./img/carrossel/0.png" alt=""></div>
+			</a>
+			<a href="#">
+				<div id="carro2" class="item"><img class="img-responsive" src="./img/carrossel/1.png" alt=""></div>
+			</a>
+			<a href="#">
+				<div id="carro3" class="item"><img class="img-responsive" src="./img/carrossel/2.png" alt=""></div>
+			</a>
+			<a href="#">
+				<div id="carro4" class="item"><img class="img-responsive" src="./img/carrossel/3.png" alt=""></div>
+			</a>
+		</div>
 		<br>
 		<div class="row">
-		
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<img src="img/produtoAzul.png" class="img-responsive" alt="Image">
+				<img src="img/produtoAzul.png" class="imgSaiba img-responsive" alt="Image"> 
 			</div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<img src="img/produtoAzul.png" class="img-responsive" alt="Image">
+				<img src="img/produtoAzul.png" class="imgSaiba img-responsive" alt="Image">
 			</div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<img src="img/produtoAzul.png" class="img-responsive" alt="Image">
+				<img src="img/produtoAzul.png" class="imgSaiba img-responsive" alt="Image">
 			</div>
-			
 		</div>
 	</div>
 </body>
