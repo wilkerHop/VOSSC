@@ -55,14 +55,6 @@ body {
 	font-size: 16px;
 }
 
-.saiba span{
-	position: absolute;
-	top: 200px;
-	left: 0;
-	width: 100%;
-	/* display: none; */
-}
-
 @media screen and (max-width: 768px) {
 	#titulo {
 		font-family: 'Libre Barcode 39 Text', cursive;

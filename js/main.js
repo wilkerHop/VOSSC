@@ -1,5 +1,0 @@
-$(()=>{
-    $('.imgSaiba').onmouseover(function(){
-        
-    })
-})
