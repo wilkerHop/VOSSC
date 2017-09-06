@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<link rel="icon" type="image/jpg" href="./img/tico.png" sizes="16x16">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -20,7 +21,6 @@
 	<script type="text/javascript" src="./js/owl.carousel.js"></script>
 	<!-- /Carousel  -->
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -28,8 +28,9 @@
 <body>
 	<div class="container">
 
+		<!-- Navbar -->
 		<nav class="navbar navbar-default" role="navigation">
-			<!-- Brand and toggle get grouped for better mobile display -->
+			<!-- Nav para mobile -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -38,26 +39,48 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="index.html">VOSSC</a>
+				<a class="navbar-brand" href="#">Traduzir</a>
 			</div>
+			<!-- /Nav para mobile -->
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
+			<!-- Nav para large devices -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<!-- <li class="active"><a href="#">Produtos</a></li> -->
-					<li><a href="#">Entrar</a></li>
 					<li><a href="#">Cadastrar</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">carrinho</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar <span class="caret"></span></a>
+						<ul id="login-dp" class="dropdown-menu">
+							<li>
+								<div class="row">
+									<div class="col-md-12">
+										<form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+											<div class="form-group">
+												<label class="sr-only" for="exampleInputEmail2">Email address</label>
+												<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Endereço de Email" required>
+											</div>
+											<div class="form-group">
+												<label class="sr-only" for="exampleInputPassword2">Password</label>
+												<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Sua Senha" required>
+												<div class="help-block text-right"><a href="">Forget the password ?</a></div>
+											</div>
+											<div class="form-group">
+												<button type="submit" class="btn btn-primary btn-block">Sign in</button>
+											</div>
+											<div class="checkbox">
+												<label>
+											 <input type="checkbox"> keep me logged-in
+											 </label>
+											</div>
+										</form>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
 				</ul>
 				<form class="navbar-form navbar-right" role="search">
 					<div class="form-group">
@@ -68,6 +91,8 @@
 			</div>
 			<!-- /.navbar-collapse -->
 		</nav>
+
+
 		<h1 id="titulo" class="text-center">Sis<img src="img/t.png" alt="t">ema de Vendas</h1>
 		<div id="carroselBanner">
 			<div id="carrosel" class="owl-carousel owl-theme">
@@ -90,14 +115,16 @@
 		<div class="row" id="vitrineGrande">
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 saiba" id="saiba1">
 				<img src="img/produtoAzul.png" class="imgSaiba img-responsive" alt="Image">
-				<span class="text-center saibaMais">Saiba Mais</span>
+				<span class="text-center saibaMais">Sapato Luxo Azul: <br><a class="btn btn-default">Saiba Mais</a></span>
 			</div>
 
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 saiba" id="saiba2">
 				<img src="img/produtoAzul.png" class="imgSaiba img-responsive" alt="Image">
+				<span class="text-center saibaMais">Sapato Luxo Azul: <br><a class="btn btn-default">Saiba Mais</a></span>
 			</div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 saiba" id="saiba3">
 				<img src="img/produtoAzul.png" class="imgSaiba img-responsive" alt="Image">
+				<span class="text-center saibaMais">Sapato Luxo Azul: <br><a class="btn btn-default">Saiba Mais</a></span>
 			</div>
 		</div>
 		<div class="row" id="vitrineCarrossel">
@@ -141,6 +168,25 @@
 
 	</footer>
 
+	<div class="row" id="testeRow">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+		<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="teste">
+			<div class="thumbnail">
+				<img data-src="#" alt="">
+				<div class="caption">
+					<h3>Title</h3>
+					<p>
+						...
+					</p>
+					<p>
+						<a href="#" class="btn btn-primary">Action</a>
+						<a href="#" class="btn btn-default">Action</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+	</div>
 </body>
 
 </html>
