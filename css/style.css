@@ -1,23 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Handlee|Libre+Barcode+39+Text');
-#titulo {
+/*menu login*/
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+#teste{
+	margin: 0 auto; 
+}
+
+#titulo{
 	font-family: 'Libre Barcode 39 Text', cursive;
 	font-size: 50px;
 }
 
-#saibaMais {
+#saibaMais{
 	background-image: url('../img/produtoAzul.png');
 }
-
-.container-fluid {
+/* Espaçamento no container */
+.container-fluid{
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
-.img-responsive {
+/* posiciona os btn saiba mais */
+.saiba span{
+	position: absolute;
+	top: 380px;
+	left: 0;
+	width: 100%;
+	/* display: none; */
+}
+
+#testeRow{
+	display: none;
+}
+
+.img-responsive{
 	margin: 0 auto;
 }
 
-.bg-4 {
+/* fundo do footer */
+.bg-4{
 	background-color: #2f2f2f;
 	/* Black Gray */
 	color: #fff;
@@ -25,42 +73,36 @@
 	font-size: 16px;
 }
 
-.saiba span{
-	position: absolute;
-	top: 200px;
-	left: 0;
-	width: 100%;
-	/* display: none; */
-}
-
-@media screen and (max-width: 768px) {
-	#titulo {
+/* conf da pag em mobile */
+@media screen and (max-width: 768px){
+	#titulo{
 		font-family: 'Libre Barcode 39 Text', cursive;
 		font-size: 30px;
 	}
-	#carroselBanner {
+	#carroselBanner{
 		display: none;
 	}
-	#vitrineGrande {
+	#vitrineGrande{
 		display: none;
 	}
-	#vitrineCarrossel {
+	#vitrineCarrossel{
 		display: block;
 	}
 }
 
-@media screen and (min-width: 769px) {
-	#titulo {
+/* conf da pag em large device */
+@media screen and (min-width: 769px){
+	#titulo{
 		font-family: 'Libre Barcode 39 Text', cursive;
 		font-size: 50px;
 	}
-	#carroselBanner {
+	#carroselBanner{
 		display: block;
 	}
-	#vitrineGrande {
+	#vitrineGrande{
 		display: block;
 	}
-	#vitrineCarrossel {
+	#vitrineCarrossel{
 		display: none;
 	}
 }
