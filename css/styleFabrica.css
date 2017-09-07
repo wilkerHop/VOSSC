@@ -15,36 +15,6 @@ body {
 .img-responsive {
 	margin: 0 auto;
 }
-.fornecedor{
-	height: 200px;
-	margin-left: 6%;
-	background-color:	lightsalmon;
-}
-.producao{
-	background-color: red;
-	height: 200px;
-	margin-left: 6%;
-}
-.armazem{
-	background-color: orange;
-	height: 200px;
-	margin-left: 6%;
-}
-.venda{
-	background-color: green;
-	height: 200px;
-	margin-left: 6%;
-}
-.patio{
-	background-color: lightblue;
-	height: 200px;
-	margin-left: 12%;
-}
-.vendaSite{
-	background-color: green;
-	height: 200px;
-	margin-left: 6%;
-}
 
 .bg-4 {
 	background-color: #2f2f2f;
@@ -59,11 +29,58 @@ body {
 		font-family: 'Libre Barcode 39 Text', cursive;
 		font-size: 30px;
 	}
+	.fabrica{
+		background-color: white;
+		height: 200px;
+		margin-left: 8.5%;
+		margin-bottom: 4%;
+	}
+	.fornecedor{
+		border: 5px solid lightsalmon;
+	}
+	.producao{
+		border:	5px solid red;
+	}
+	.armazem{
+		border:	5px solid orange;
+	}
+	.venda{
+		border:	5px solid green;
+	}
+	.patio{
+		border: 5px solid lightblue;
+	}
+	.vendaSite{
+		border: 5px solid green;
+	}
 }
-
 @media screen and (min-width: 769px) {
 	#titulo {
 		font-family: 'Libre Barcode 39 Text', cursive;
 		font-size: 50px;
+	}
+	.fabrica{
+		height: 200px;
+		margin-left: 6%;
+	}
+	.fornecedor{
+		background-color:	lightsalmon;
+	}
+	.producao{
+		background-color: red;
+	}
+	.armazem{
+		background-color: orange;
+	}
+	.venda{
+		background-color: green;
+	}
+	.patio{
+		background-color: lightblue;
+		margin-left: 12%;
+	}
+	.vendaSite{
+		background-color: green;
+		margin-left: 6%;
 	}
 }
