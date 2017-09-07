@@ -79,7 +79,7 @@
 		font-family: 'Libre Barcode 39 Text', cursive;
 		font-size: 30px;
 	}
-	#carroselBanner{
+	#myCarousel{
 		display: none;
 	}
 	#vitrineGrande{
@@ -96,7 +96,7 @@
 		font-family: 'Libre Barcode 39 Text', cursive;
 		font-size: 50px;
 	}
-	#carroselBanner{
+	#myCarousel{
 		display: block;
 	}
 	#vitrineGrande{
