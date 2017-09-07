@@ -1,2 +1,2 @@
 # VOSSC
-Projeto da aplicação VOSSC para o Callenge da T-Systems.
+Projeto da aplicação VOSSC para o Challenge da T-Systems.
