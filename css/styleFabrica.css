@@ -53,6 +53,12 @@ body {
 	.vendaSite{
 		border: 5px solid green;
 	}
+	#subMenu{
+		display: none;
+	}
+	#subMenu2{
+		display: block;
+	}
 }
 @media screen and (min-width: 769px) {
 	#titulo {
@@ -82,5 +88,11 @@ body {
 	.vendaSite{
 		background-color: green;
 		margin-left: 6%;
+	}
+	#subMenu{
+		display: block;
+	}
+	#subMenu2{
+		display: none;
 	}
 }
