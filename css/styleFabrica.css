@@ -68,6 +68,7 @@ body {
 	.fabrica{
 		height: 200px;
 		margin-left: 6%;
+		cursor: pointer;
 	}
 	.fornecedor{
 		background-color:	lightsalmon;
