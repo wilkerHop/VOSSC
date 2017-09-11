@@ -130,7 +130,7 @@
 		<div class="row" id="vitrineGrande">
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 saiba" id="saiba1">
 				<img src="img/produtoAzul.png" class="imgSaiba img-responsive" alt="Image">
-				<span class="text-center saibaMais">Sapato Luxo Azul: <br><a class="btn btn-default">Saiba Mais</a></span>
+				<span class="text-center saibaMais">Sapato Luxo Azul: <br><a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Saiba Mais</a></span>
 			</div>
 
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 saiba" id="saiba2">
@@ -147,20 +147,27 @@
 			<div id="carousel-id" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="item text-center active">
-						<img src="img/produtoAzul.png" class="imgSaiba img-responsive" alt="Image">
+						<img src="img/produtoAzul.gif" class="imgSaiba img-responsive" alt="Image">
 					</div>
 					<div class="item text-center">
-						<img src="img/produtoAzul.png" class="imgSaiba img-responsive" alt="Image">
+						<img src="img/produtoBranco.gif" class="imgSaiba img-responsive" alt="Image">
 					</div>
 					<div class="item text-center">
-						<img src="img/produtoAzul.png" class="imgSaiba img-responsive" alt="Image">
+						<img src="img/produtoMagenta.gif" class="imgSaiba img-responsive" alt="Image">
 					</div>
 				</div>
-				<a class="left carousel-control" href="#carousel-id" data-slide="prev"></a>
-				<a class="right carousel-control" href="#carousel-id" data-slide="next"></a>
+				<a class="left carousel-control" href="#carousel-id" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				<a class="right carousel-control" href="#carousel-id" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				  </a>
 			</div>
 
 		</div>
+
 	</div>
 
 	<!-- Footer -->
@@ -183,24 +190,33 @@
 
 	</footer>
 
-	<div class="row" id="testeRow">
-		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
-		<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="teste">
-			<div class="thumbnail">
-				<img data-src="#" alt="">
-				<div class="caption">
-					<h3>Title</h3>
-					<p>
-						...
-					</p>
-					<p>
-						<a href="#" class="btn btn-primary">Action</a>
-						<a href="#" class="btn btn-default">Action</a>
-					</p>
+	<div id="descProduto" class="container">
+		
+		<div class="modal fade" id="modal-id">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Produto Luxo Azul</h4>
+					</div>
+					<div class="modal-body">
+						
+						<img src="img/produtoAzul.gif" class="img-responsive" alt="Image">
+						<p>Sapato de couro sintetico, de cor azul clara, interior revestido de pelica macia para o seu maximo conforto.</p>
+						<p>Projetado para se encaixar perfeitamente ao seus pés de forma que você fique sempre confortavel e pronta para seu dia-a-dia.</p>
+						<p>Solado em madeira de reflorestamento, leve e envernizado para maior brilho e conservação do material.</p>
+						<p>Peso: 200 gramas por peça.</p>
+						<p>Conteúdo do pacote: 1 par de sapatos luxo azul.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Voltar</button>
+						<button type="button" class="btn btn-primary">Comprar</button>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+		
+
 	</div>
 </body>
 
