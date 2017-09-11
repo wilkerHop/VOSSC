@@ -11,9 +11,11 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 	    crossorigin="anonymous">
+
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/indexLang.js"></script>
 </head>
 
 <body>
@@ -29,7 +31,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="index.html">VOSSC</a>
-				<a class="navbar-brand" href="#">Traduzir</a>
+				<a class="navbar-brand" id="traduzir" href="#"><i class="fa fa-language" aria-hidden="true"></i></a>
 			</div>
 			<!-- /Nav para mobile -->
 
@@ -37,33 +39,33 @@
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<!-- <li class="active"><a href="#">Produtos</a></li> -->
-					<li><a href="#">Cadastrar</a></li>
+					<li><a id="cadastrar" data-toggle="modal" href='#modal-id4'>Cadastrar</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+					<li>
+						<a href="#">
+							<!-- icone do carrinho -->
+							<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
+						</a>
+					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="entrar">Entrar <span class="caret"></span></a>
 						<ul id="login-dp" class="dropdown-menu">
 							<li>
 								<div class="row">
 									<div class="col-md-12">
 										<form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
 											<div class="form-group">
-												<label class="sr-only" for="exampleInputEmail2">Email address</label>
-												<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Endereço de Email" required>
+												<label class="sr-only" for="exampleInputEmail2" id="emailEntrar">Endereço de Email</label>
+												<input type="email" class="form-control" id="emailEntrarPlace" placeholder="Seu Email" required>
 											</div>
 											<div class="form-group">
-												<label class="sr-only" for="exampleInputPassword2">Password</label>
-												<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Sua Senha" required>
-												<div class="help-block text-right"><a href="">Forget the password ?</a></div>
+												<label class="sr-only" for="exampleInputPassword2" id="senhaEntrar">Senha</label>
+												<input type="password" class="form-control" id="senhaEntrarPlace" placeholder="Sua Senha" required>
+												<div class="help-block text-right"><a href="#" id="esqueceu">Esqueceu sua senha ?</a></div>
 											</div>
 											<div class="form-group">
-												<button type="submit" class="btn btn-primary btn-block">Sign in</button>
-											</div>
-											<div class="checkbox">
-												<label>
-											 <input type="checkbox"> keep me logged-in
-											 </label>
+												<button type="submit" class="btn btn-primary btn-block" id="btnEntrar">Entrar</button>
 											</div>
 										</form>
 									</div>
@@ -76,7 +78,7 @@
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="Search">
 					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
+					<a href="resultado.html" class="btn btn-default">Submit</a>
 				</form>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -91,19 +93,19 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="img/carrossel/0.png" style="width:100%;">
+						<img src="img/carrossel/0.png">
 					</div>
 
 					<div class="item">
-						<img src="img/carrossel/1.png" style="width:100%;">
+						<img src="img/carrossel/1.png">
 					</div>
 
 					<div class="item">
-						<img src="img/carrossel/2.png" style="width:100%;">
+						<img src="img/carrossel/2.png">
 					</div>
 
 					<div class="item">
-						<img src="img/carrossel/3.png" style="width:100%;">
+						<img src="img/carrossel/3.png">
 					</div>
 				</div>
 
@@ -203,7 +205,7 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Voltar</button>
-						<input type="number" min="1" value="1" name="" id="">
+						<input type="number" min="1" value="1" name="" class="saibaQuant">
 						<button type="button" class="btn btn-primary">Comprar</button>
 					</div>
 				</div>
@@ -228,7 +230,7 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Voltar</button>
-						<input type="number" min="1" value="1" name="" id="">
+						<input type="number" min="1" value="1" name="" class="saibaQuant">
 						<button type="button" class="btn btn-primary">Comprar</button>
 					</div>
 				</div>
@@ -253,13 +255,48 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Voltar</button>
-						<input type="number" min="1" value="1" name="" id="">
+						<input type="number" min="1" value="1" name="" class="saibaQuant">
 						<button type="button" class="btn btn-primary">Comprar</button>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<div class="modal fade" id="modal-id4">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Cadastro Novo Usuario:</h4>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class='form-group'>
+								<label for='nome'>Nome:</label>
+								<input type="text" id="nome" class="form-control" placeholder="Coloque o seu nome aqui"> <span id="erroNome" class="erro"></span><br/>
+							</div>
+							<div class='form-group'>
+								<label for='username'>Nome de usuário:</label>
+								<input type="text" id="username" class="form-control" placeholder="Escolha seu nome de usuário"> <span id="erroLogin"
+								    class="erro"></span><br/>
+							</div>
+							<div class='form-group'>
+								<label for='senha'>Senha:</label>
+								<input type="text" id="senha2" class="form-control" placeholder="Define sua senha"> <span id="erroSenha" class="erro"></span><br/>
+							</div>
+							<div class='form-group'>
+								<label for='senha2'>Confirme sua senha:</label>
+								<input type="text" id="Confsenha" class="form-control" placeholder="Confirme sua senha"> <span id="erroConfSenha"
+								    class="erro"></span><br/>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" id="btn btn-default">Cadastrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </body>

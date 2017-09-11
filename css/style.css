@@ -29,6 +29,18 @@
     }
 }
 
+/* width da img do carrossel */
+.item img{ width:100%; }
+
+.center{
+	width: 150px;
+	margin: 40px auto; 
+}
+
+.saibaQuant{
+	width: 10%
+}
+
 #teste{
 	margin: 0 auto; 
 }
