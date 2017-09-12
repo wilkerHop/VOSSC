@@ -1,5 +1,5 @@
-$(()=>{
-    $('.imgSaiba').onmouseover(function(){
+// $(()=>{
+//     $('.imgSaiba').onmouseover(function(){
         
-    })
-})
+//     })
+// })

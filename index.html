@@ -76,9 +76,9 @@
 				</ul>
 				<form class="navbar-form navbar-right" role="search">
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
+						<input type="text" class="form-control" placeholder="Busca" id="busca">
 					</div>
-					<a href="resultado.html" class="btn btn-default">Submit</a>
+					<a href="resultado.html" class="btn btn-default"><i class="fa fa-search"></i></a>
 				</form>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -88,23 +88,23 @@
 		<h1 id="titulo" class="text-center">Sis<img src="img/t.png" alt="t">ema de Vendas</h1>
 
 		<div class="container">
-			<!-- carrossel -->
+			<!-- carrossel advertise -->
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
-					<div class="item active">
+					<div class="item active" id="carroAd0">
 						<img src="img/carrossel/0.png">
 					</div>
 
-					<div class="item">
+					<div class="item"id="carroAd0">
 						<img src="img/carrossel/1.png">
 					</div>
 
-					<div class="item">
+					<div class="item"id="carroAd0">
 						<img src="img/carrossel/2.png">
 					</div>
 
-					<div class="item">
+					<div class="item"id="carroAd0">
 						<img src="img/carrossel/3.png">
 					</div>
 				</div>
@@ -119,22 +119,21 @@
 				<span class="sr-only">Next</span>
 			  </a>
 			</div>
-			<!-- /carrosel -->
+			<!-- /carrosel advertise -->
 		</div>
 		<br>
 		<div class="row" id="vitrineGrande">
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 saiba" id="saiba1">
 				<img src="img/produtoAzul.png" class="imgSaiba img-responsive" alt="Image">
-				<span class="text-center saibaMais">Sapato Luxo Azul: <br><a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Saiba Mais</a></span>
+				<span id="saibaMaisBtn1" class="text-center saibaMais">Sapato Luxo Azul: <br><a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Saiba Mais</a></span>
 			</div>
-
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 saiba" id="saiba2">
 				<img src="img/produtoMagenta.gif" class="imgSaiba img-responsive" alt="Image">
-				<span class="text-center saibaMais">Sapato Luxo Magenta: <br><a class="btn btn-primary" data-toggle="modal" href='#modal-id2'>Saiba Mais</a></span>
+				<span id="saibaMaisBtn2" class="text-center saibaMais">Sapato Luxo Magenta: <br><a class="btn btn-primary" data-toggle="modal" href='#modal-id2'>Saiba Mais</a></span>
 			</div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 saiba" id="saiba3">
 				<img src="img/produtoBranco.gif" class="imgSaiba img-responsive" alt="Image">
-				<span class="text-center saibaMais">Sapato Luxo Branco: <br><a class="btn btn-primary" data-toggle="modal" href='#modal-id3'>Saiba Mais</a></span>
+				<span id="saibaMaisBtn3" class="text-center saibaMais">Sapato Luxo Branco: <br><a class="btn btn-primary" data-toggle="modal" href='#modal-id3'>Saiba Mais</a></span>
 			</div>
 		</div>
 		<div class="row" id="vitrineCarrossel">
@@ -194,8 +193,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 						<h4 class="modal-title">Produto Luxo Azul</h4>
 					</div>
-					<div class="modal-body">
-
+					<div class="modal-body" id="modalContent1">
 						<img src="img/produtoAzul.gif" class="img-responsive" alt="Image">
 						<p>Sapato de couro sintetico, de cor azul clara, interior revestido de pelica macia para o seu maximo conforto.</p>
 						<p>Projetado para se encaixar perfeitamente ao seus pés de forma que você fique sempre confortavel e pronta para seu dia-a-dia.</p>
@@ -219,8 +217,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 						<h4 class="modal-title">Produto Luxo Magenta</h4>
 					</div>
-					<div class="modal-body">
-
+					<div class="modal-body" id="modalContent2">
 						<img src="img/produtoMagenta.gif" class="img-responsive" alt="Image">
 						<p>Sapato de couro sintetico, de cor Magenta, interior revestido de pelica macia para o seu maximo conforto.</p>
 						<p>Projetado para se encaixar perfeitamente ao seus pés de forma que você fique sempre confortavel e pronta para seu dia-a-dia.</p>
@@ -244,7 +241,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 						<h4 class="modal-title">Produto Luxo Branco</h4>
 					</div>
-					<div class="modal-body">
+					<div class="modal-body" id="modalContent3">
 
 						<img src="img/produtoBranco.gif" class="img-responsive" alt="Image">
 						<p>Sapato de couro sintetico, de cor Branca, interior revestido de pelica macia para o seu maximo conforto.</p>
@@ -267,32 +264,32 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title">Cadastro Novo Usuario:</h4>
+						<h4 class="modal-title" id="tituloCadastro">Cadastro Novo Usuario:</h4>
 					</div>
 					<div class="modal-body">
 						<form>
 							<div class='form-group'>
-								<label for='nome'>Nome:</label>
+								<label for='nome' id="nomeLbl">Nome:</label>
 								<input type="text" id="nome" class="form-control" placeholder="Coloque o seu nome aqui"> <span id="erroNome" class="erro"></span><br/>
 							</div>
 							<div class='form-group'>
-								<label for='username'>Nome de usuário:</label>
+								<label for='username' id="usernameLbl">Nome de usuário:</label>
 								<input type="text" id="username" class="form-control" placeholder="Escolha seu nome de usuário"> <span id="erroLogin"
 								    class="erro"></span><br/>
 							</div>
 							<div class='form-group'>
-								<label for='senha'>Senha:</label>
-								<input type="text" id="senha2" class="form-control" placeholder="Define sua senha"> <span id="erroSenha" class="erro"></span><br/>
+								<label for='senha' id="senhaLbl">Senha:</label>
+								<input type="text" id="senha" class="form-control" placeholder="Define sua senha"> <span id="erroSenha" class="erro"></span><br/>
 							</div>
 							<div class='form-group'>
-								<label for='senha2'>Confirme sua senha:</label>
+								<label for='Confsenha' id="ConfsenhaLbl">Confirme sua senha:</label>
 								<input type="text" id="Confsenha" class="form-control" placeholder="Confirme sua senha"> <span id="erroConfSenha"
 								    class="erro"></span><br/>
 							</div>
 						</form>
 					</div>
 					<div class="modal-footer">
-						<button type="submit" id="btn btn-default">Cadastrar</button>
+						<button type="submit" class="btn btn-default" id="btnCadastrar">Cadastrar</button>
 					</div>
 				</div>
 			</div>
