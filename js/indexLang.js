@@ -78,6 +78,12 @@ $(() => {
 		else traduzir(port);
 		$('#textoProduto').for = lang = !lang;
 	})
+	$('#formCadastroClose').click(function () {
+		$('#nome').val("")
+		$('#username').val("")
+		$('#senha').val("")
+		$('#Confsenha').val("")
+	})
 })
 
 function traduzir(lang) {
@@ -89,7 +95,7 @@ function traduzir(lang) {
 	$('#senhaEntrar').html(lang.senhaEntrar);
 	$('#esqueceu').html(lang.esqueceu);
 	$('#btnEntrar').html(lang.entrar);
-	$('#busca').attr('placeholder',lang.busca);
+	$('#busca').attr('placeholder', lang.busca);
 	$('#titulo').html(lang.titulo);
 	$('#carroAd0').html(lang.carroAd0);
 	$('#carroAd1').html(lang.carroAd1);
@@ -105,15 +111,15 @@ function traduzir(lang) {
 	$('#modalContent3').html(lang.modalContent3);
 	$('#p0').html(lang.grupo);
 	$('.form-group:first-child label').html(lang.nomeLbl)
-    $('.form-group:nth-child(2) label').html(lang.usernameLbl)
-    $('.form-group:nth-child(3) label').html(lang.senhaLbl)
-    $('.form-group:nth-child(4) label').html(lang.ConfsenhaLbl)
-    $('#nome').attr('placeholder', lang.nome)
-    $('#username').attr('placeholder', lang.username)
-    $('#senha').attr('placeholder', lang.senha)
-    $('#Confsenha').attr('placeholder', lang.Confsenha)
-    $('#cadastrar').html(lang.cadastrar);
-    $('#tituloCadastro').html(lang.tituloCadastro);
-    $('#btnCadastrar').html(lang.cadastrar);
-    $('#p0').html(lang.grupo);
+	$('.form-group:nth-child(2) label').html(lang.usernameLbl)
+	$('.form-group:nth-child(3) label').html(lang.senhaLbl)
+	$('.form-group:nth-child(4) label').html(lang.ConfsenhaLbl)
+	$('#nome').attr('placeholder', lang.nome)
+	$('#username').attr('placeholder', lang.username)
+	$('#senha').attr('placeholder', lang.senha)
+	$('#Confsenha').attr('placeholder', lang.Confsenha)
+	$('#cadastrar').html(lang.cadastrar);
+	$('#tituloCadastro').html(lang.tituloCadastro);
+	$('#btnCadastrar').html(lang.cadastrar);
+	$('#p0').html(lang.grupo);
 }
