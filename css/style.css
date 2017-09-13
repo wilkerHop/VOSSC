@@ -40,7 +40,10 @@
 .saibaQuant{
 	width: 10%
 }
-
+.flutuaDireita{
+	margin-right: 6px;
+	float: right;
+}
 #teste{
 	margin: 0 auto; 
 }
@@ -48,10 +51,6 @@
 #titulo{
 	font-family: 'Libre Barcode 39 Text', cursive;
 	font-size: 50px;
-}
-
-#saibaMais{
-	background-image: url('../img/produtoAzul.png');
 }
 /* Espaçamento no container */
 .container-fluid{
