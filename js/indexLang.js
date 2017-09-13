@@ -30,7 +30,9 @@ var port = {
 	senha: 'Defina sua senha',
 	ConfsenhaLbl: 'Confirme sua senha:',
 	Confsenha: 'Confirme sua senha',
-	tituloCadastro: 'Cadastro Novo Usuario:'
+	tituloCadastro: 'Cadastro Novo Usuario:',
+	voltar: 'Voltar',
+	comprar: 'Comprar',
 }
 
 var eng = {
@@ -65,7 +67,9 @@ var eng = {
 	senha: 'Define your password',
 	ConfsenhaLbl: 'Confirm your password:',
 	Confsenha: 'Confirm your password',
-	tituloCadastro: 'Sign in a new user:'
+	tituloCadastro: 'Sign in a new user:',
+	voltar: 'Back',
+	comprar: 'Buy it',
 }
 
 lang = true;
@@ -122,4 +126,7 @@ function traduzir(lang) {
 	$('#tituloCadastro').html(lang.tituloCadastro);
 	$('#btnCadastrar').html(lang.cadastrar);
 	$('#p0').html(lang.grupo);
+	$('.comprar').html(lang.comprar);
+	$('.voltar').html(lang.voltar);
+	
 }
