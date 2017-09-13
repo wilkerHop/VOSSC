@@ -8,10 +8,6 @@ var port = {
 	esqueceu: 'Esqueceu sua senha ?',
 	busca: 'Busca',
 	titulo: 'Sis<img src="img/t.png" alt="t">ema de Vendas',
-	carroAd0: '<img src="img/carrossel/0.png">',
-	carroAd1: '<img src="img/carrossel/1.png">',
-	carroAd2: '<img src="img/carrossel/2.png">',
-	carroAd3: '<img src="img/carrossel/3.png">',
 	saibaMaisBtn1: "Sapato Luxo Azul: <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id'>Saiba Mais</a>",
 	saibaMaisBtn2: "Sapato Luxo Magenta: <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id2'>Saiba Mais</a>",
 	saibaMaisBtn3: "Sapato Luxo Branco: <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id3'>Saiba Mais</a>",
@@ -45,10 +41,6 @@ var eng = {
 	esqueceu: 'Forgot your password ?',
 	busca: 'Search',
 	titulo: 'Sales sys<img src="img/t.png" alt="t">em',
-	carroAd0: '<img src="img/carrossel/0.png">',
-	carroAd1: '<img src="img/carrossel/1.png">',
-	carroAd2: '<img src="img/carrossel/2.png">',
-	carroAd3: '<img src="img/carrossel/3.png">',
 	saibaMaisBtn1: "Know our brand Luxury Light Blue:  <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id'>Know More</a>",
 	saibaMaisBtn2: "Know our brand Luxury Magenta: <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id2'>Know More</a>",
 	saibaMaisBtn3: "Know our brand Luxury White: <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id3'>Know More</a>",
@@ -101,9 +93,6 @@ function traduzir(lang) {
 	$('#btnEntrar').html(lang.entrar);
 	$('#busca').attr('placeholder', lang.busca);
 	$('#titulo').html(lang.titulo);
-	$('#carroAd0').html(lang.carroAd0);
-	$('#carroAd1').html(lang.carroAd1);
-	$('#carroAd2').html(lang.carroAd2);
 	$('#saibaMaisBtn1').html(lang.saibaMaisBtn1);
 	$('#saibaMaisBtn2').html(lang.saibaMaisBtn2);
 	$('#saibaMaisBtn3').html(lang.saibaMaisBtn3);
@@ -127,6 +116,5 @@ function traduzir(lang) {
 	$('#btnCadastrar').html(lang.cadastrar);
 	$('#p0').html(lang.grupo);
 	$('.comprar').html(lang.comprar);
-	$('.voltar').html(lang.voltar);
-	
+	$('.voltar').html(lang.voltar);	
 }

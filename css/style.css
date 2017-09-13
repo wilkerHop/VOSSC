@@ -58,7 +58,21 @@
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-
+.textoCarrosel{
+	position: absolute;
+	width: 100%;
+	top:75px;
+	text-align: center;
+	background-color: lime;
+}
+.azulEscuro{
+	color: #001c27;
+	font-size: 50px;
+}
+.azulClaro{
+	color: #01b6fc;
+	font-size: 50px;
+}
 /* posiciona os btn saiba mais */
 .saiba span{
 	position: absolute;
