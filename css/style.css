@@ -61,17 +61,33 @@
 .textoCarrosel{
 	position: absolute;
 	width: 100%;
-	top:75px;
+	top:10px;
+	font-size: 55px;
+	font-weight: bold;
 	text-align: center;
-	background-color: lime;
 }
 .azulEscuro{
 	color: #001c27;
-	font-size: 50px;
 }
 .azulClaro{
 	color: #01b6fc;
-	font-size: 50px;
+}
+.branco{
+	color: white;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.violeta{
+	font-size: 65px;
+	color: #7200d2;
+}
+.rosa{
+	font-size: 55px;
+	color: #ff00a8;
+}
+.direita{
+	float: right;
+	margin-right: 50px;
+	text-shadow: 0px 0 0 #efe;
 }
 /* posiciona os btn saiba mais */
 .saiba span{
