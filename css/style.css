@@ -62,7 +62,8 @@
 	position: absolute;
 	width: 100%;
 	top:10px;
-	font-size: 55px;
+	font-size: 3.9em;
+	font-weight: 500;
 	font-weight: bold;
 	text-align: center;
 }
