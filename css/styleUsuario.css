@@ -20,11 +20,17 @@
 }
 .btnMenu{
 	height: 200px;
-	background-color: blue;
+	background-color: white;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-right: 4%;
 	margin-left: 4%;
+	-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	font-size: 1.4em;
+	border-radius: 0px;
+	text-align: left;
 }
 @media(max-width:768px){
     #login-dp{
@@ -34,7 +40,15 @@
     #login-dp .bottom{
         background-color: inherit;
         border-top:0 none;
-    }
+	}
+	.btnMenu{
+		height: 200px;
+		margin-left: 8.5%;
+		margin-bottom: 2%;
+		-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+		box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	}
 }
 
 /* width da img do carrossel */
