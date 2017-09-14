@@ -112,10 +112,7 @@ function traduzir(lang) {
     $('#tituloCadastro').html(lang.tituloCadastro);
     $('#btnCadastrar').html(lang.cadastrar);
 	$('#p0').html(lang.grupo);
-	$('#voltar').html(lang.voltar);
-	$('#comprar').html(lang.comprar);
-	// $('#carroAd'+0).html('dfssdsdfs')
-	// console.log(lang.carrossel[0])
-	for (var i=0; i < 4; i++) 
-		$("#carroAd"+i).html(lang.carrossel[i]);
+	$('#.voltar').html(lang.voltar);
+	$('#.comprar').html(lang.comprar);
+	for (var i=0; 0 < i; i++) $('carroAd'+i+' .textoCarrosel').html(lang.carrossel[i])
 }
