@@ -8,10 +8,6 @@ var port = {
 	esqueceu: 'Esqueceu sua senha ?',
 	busca: 'Busca',
 	titulo: 'Sis<img src="img/t.png" alt="t">ema de Vendas',
-	carroAd0: '<img src="img/carrossel/0.png">',
-	carroAd1: '<img src="img/carrossel/1.png">',
-	carroAd2: '<img src="img/carrossel/2.png">',
-	carroAd3: '<img src="img/carrossel/3.png">',
 	saibaMaisBtn1: "Sapato Luxo Azul: <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id'>Saiba Mais</a>",
 	saibaMaisBtn2: "Sapato Luxo Magenta: <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id2'>Saiba Mais</a>",
 	saibaMaisBtn3: "Sapato Luxo Branco: <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id3'>Saiba Mais</a>",
@@ -29,7 +25,13 @@ var port = {
 	Confsenha: 'Confirme sua senha',
 	tituloCadastro: 'Cadastro Novo Usuario:',
 	comprar: 'Comprar',
-	voltar: 'Voltar'
+	voltar: 'Voltar',
+	carrossel: [
+		'<span class="azulEscuro">Nova Linha <span class="azulClaro">Azul</span><br> Confira Já</span>',
+		'<span class="branco">Confira nossa nova linha <br> de Tênis</span>',
+		'<span class="violeta">Novidade</span><br> <span class="rosa">Linha Rosa</span>',
+		'<span class="direita branco">Sapatos para todos <br> os gostos</span>'
+	]
 }
 
 var eng = {
@@ -42,10 +44,6 @@ var eng = {
 	esqueceu: 'Forgot your password ?',
 	busca: 'Search',
 	titulo: 'Sales sys<img src="img/t.png" alt="t">em',
-	carroAd0: '<img src="img/carrossel/0.png">',
-	carroAd1: '<img src="img/carrossel/1.png">',
-	carroAd2: '<img src="img/carrossel/2.png">',
-	carroAd3: '<img src="img/carrossel/3.png">',
 	saibaMaisBtn1: "Know our brand Luxury Light Blue:  <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id'>Know More</a>",
 	saibaMaisBtn2: "Know our brand Luxury Magenta: <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id2'>Know More</a>",
 	saibaMaisBtn3: "Know our brand Luxury White: <br><a class='btn btn-primary' data-toggle='modal' href='#modal-id3'>Know More</a>",
@@ -64,6 +62,12 @@ var eng = {
 	tituloCadastro: 'Sign in a new user:',
 	comprar: 'Buy it',
 	voltar: 'Back',
+	carrossel: [
+		'<span class="azulEscuro">New brand <span class="azulClaro">Light blue</span><br> Check it out now</span>',
+		'<span class="branco">Take a look at our new <br> Sneaker brand</span>',
+		'<span class="violeta">News !!</span><br> <span class="rosa">Magenta Brand</span>',
+		'<span class="direita branco">Shoes for each of <br> the tastes</span>'
+	]
 }
 
 lang = true;
@@ -89,9 +93,6 @@ function traduzir(lang) {
 	$('#btnEntrar').html(lang.entrar);
 	$('#busca').attr('placeholder',lang.busca);
 	$('#titulo').html(lang.titulo);
-	$('#carroAd0').html(lang.carroAd0);
-	$('#carroAd1').html(lang.carroAd1);
-	$('#carroAd2').html(lang.carroAd2);
 	$('#saibaMaisBtn1').html(lang.saibaMaisBtn1);
 	$('#saibaMaisBtn2').html(lang.saibaMaisBtn2);
 	$('#saibaMaisBtn3').html(lang.saibaMaisBtn3);
@@ -111,7 +112,10 @@ function traduzir(lang) {
     $('#tituloCadastro').html(lang.tituloCadastro);
     $('#btnCadastrar').html(lang.cadastrar);
 	$('#p0').html(lang.grupo);
-	$('#.voltar').html(lang.voltar);
-	$('#.comprar').html(lang.comprar);
-	
+	$('#voltar').html(lang.voltar);
+	$('#comprar').html(lang.comprar);
+	// $('#carroAd'+0).html('dfssdsdfs')
+	// console.log(lang.carrossel[0])
+	for (var i=0; i < 4; i++) 
+		$("#carroAd"+i).html(lang.carrossel[i]);
 }
