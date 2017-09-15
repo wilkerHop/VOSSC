@@ -1,38 +1,148 @@
-#saibaMais {
-    background-image: url('../img/produtoAzul.png');
+@import url('https://fonts.googleapis.com/css?family=Handlee|Libre+Barcode+39+Text');
+/*menu login*/
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
 }
 
-.container-fluid {
-    padding-top: 30px;
-    padding-bottom: 30px;
+/* width da img do carrossel */
+.item img{ width:100%; }
+
+.center{
+	width: 150px;
+	margin: 40px auto; 
 }
-.img-responsive {
-    margin: 0 auto;
+
+.saibaQuant{
+	width: 10%
 }
-.bg-4 {
-    background-color: #2f2f2f;
-    /* Black Gray */
-    color: #fff;
+.flutuaDireita{
+	margin-right: 6px;
+	float: right;
 }
-@media screen and (max-width: 768px) {
-    #carroselBanner{
-        display: none;
-    }
-    #vitrineGrande{
-        display: none;
-    }
-    #vitrineCarrossel{
-        display: block;
-    }
+#teste{
+	margin: 0 auto; 
 }
-@media screen and (min-width: 769px) {
-    #carroselBanner{
-        display: block;
-    }
-    #vitrineGrande{
-        display: block;
-    }
-    #vitrineCarrossel{
-        display: none;
-    }
+
+#titulo{
+	font-family: 'Libre Barcode 39 Text', cursive;
+	font-size: 50px;
+}
+/* Espaçamento no container */
+.container-fluid{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+/* texto interno do carrosel e suas cores */
+.textoCarrosel{
+	position: absolute;
+	width: 100%;
+	font-size: 3.9em;
+	font-weight: bold;
+	text-align: center;
+}
+.azulEscuro{
+	color: #001c27;
+}
+.azulClaro{
+	color: #01b6fc;
+}
+.branco{
+	color: white;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.violeta{
+	font-size: 65px;
+	color: #7200d2;
+}
+.rosa{
+	font-size: 55px;
+	color: #ff00a8;
+}
+.direita{
+	float: right;
+	margin-right: 50px;
+	text-shadow: 0px 0 0 #efe;
+}
+/* posiciona os btn saiba mais */
+.saiba span{
+	position: absolute;
+	top: 380px;
+	left: 0;
+	width: 100%;
+	/* display: none; */
+}
+#testeRow{
+	display: block;
+	z-index: 3;
+}
+.img-responsive{
+	margin: 0 auto;
+}
+
+/* fundo do footer */
+.bg-4{
+	background-color: #2f2f2f;
+	/* Black Gray */
+	color: #fff;
+	font-family: 'Handlee', cursive;
+	font-size: 16px;
+}
+
+/* conf da pag em mobile */
+@media screen and (max-width: 768px){
+	#titulo{
+		font-family: 'Libre Barcode 39 Text', cursive;
+		font-size: 30px;
+	}
+	#myCarousel{
+		display: none;
+	}
+	#vitrineGrande{
+		display: none;
+	}
+	#vitrineCarrossel{
+		display: block;
+	}
+}
+
+/* conf da pag em large device */
+@media screen and (min-width: 769px){
+	#titulo{
+		font-family: 'Libre Barcode 39 Text', cursive;
+		font-size: 50px;
+	}
+	#myCarousel{
+		display: block;
+	}
+	#vitrineGrande{
+		display: block;
+	}
+	#vitrineCarrossel{
+		display: none;
+	}
 }
