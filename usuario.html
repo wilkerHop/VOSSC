@@ -42,7 +42,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">
+                        <a href="carrinho.html">
                             <!-- icone do carrinho -->
                             <i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
                         </a>
@@ -174,10 +174,27 @@
                         <h4 id="tituloModal1" class="modal-title">Trocar Senha</h4>
                     </div>
                     <div class="modal-body" id="modalContent1">
-
+                        
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                
+                                <label for="SenhaAntiga">Antiga Senha:</label>
+                                <input type="password" name="senhaAntiga" id="SenhaAntiga" placeholder="Digite sua senha anterior aqui" class="form-control" required="required" title=""><br>
+                                
+                                <label for="SenhaNova">Nova Senha:</label>
+                                <input type="password" name="SenhaNova" id="SenhaNova" placeholder="Digite sua nova senha aqui" class="form-control" required="required" title=""><br>
+                                
+                                <label for="SenhaNovaConf">Confirmar Senha:</label>
+                                <input type="password" name="SenhaNovaConf" id="SenhaNovaConf" placeholder="Digite sua nova senha novamente aqui" class="form-control" required="required" title=""><br>
+                                
+                            </div>
+                        </div>
+                        
                     </div>
                     <div class="modal-footer">
-
+                        
+                        <button type="button" class="btn btn-default">Salvar</button>
+                        
                     </div>
                 </div>
             </div>
