@@ -65,8 +65,8 @@ var eng = {
 	carrossel: [
 		'<span class="azulEscuro">New brand <span class="azulClaro">Light blue</span><br> Check it out now</span>',
 		'<span class="branco">Take a look at our new <br> Sneaker brand</span>',
-		'<span class="violeta">Novidade</span><br> <span class="rosa">Linha Rosa</span>',
-		'<span class="direita branco">Sapatos para todos <br> os gostos</span>'
+		'<span class="violeta">News !!</span><br> <span class="rosa">Magenta Brand</span>',
+		'<span class="direita branco">Shoes for each of <br> the tastes</span>'
 	]
 }
 
@@ -91,11 +91,8 @@ function traduzir(lang) {
 	$('#senhaEntrar').html(lang.senhaEntrar);
 	$('#esqueceu').html(lang.esqueceu);
 	$('#btnEntrar').html(lang.entrar);
-	$('#busca').attr('placeholder',lang.busca);
+	$('#busca').attr('placeholder', lang.busca);
 	$('#titulo').html(lang.titulo);
-	$('#carroAd0').html(lang.carroAd0);
-	$('#carroAd1').html(lang.carroAd1);
-	$('#carroAd2').html(lang.carroAd2);
 	$('#saibaMaisBtn1').html(lang.saibaMaisBtn1);
 	$('#saibaMaisBtn2').html(lang.saibaMaisBtn2);
 	$('#saibaMaisBtn3').html(lang.saibaMaisBtn3);
@@ -104,18 +101,20 @@ function traduzir(lang) {
 	$('#modalContent3').html(lang.modalContent3);
 	$('#p0').html(lang.grupo);
 	$('.form-group:first-child label').html(lang.nomeLbl)
-    $('.form-group:nth-child(2) label').html(lang.usernameLbl)
-    $('.form-group:nth-child(3) label').html(lang.senhaLbl)
-    $('.form-group:nth-child(4) label').html(lang.ConfsenhaLbl)
-    $('#nome').attr('placeholder', lang.nome)
-    $('#username').attr('placeholder', lang.username)
-    $('#senha').attr('placeholder', lang.senha)
-    $('#Confsenha').attr('placeholder', lang.Confsenha)
-    $('#cadastrar').html(lang.cadastrar);
-    $('#tituloCadastro').html(lang.tituloCadastro);
-    $('#btnCadastrar').html(lang.cadastrar);
+	$('.form-group:nth-child(2) label').html(lang.usernameLbl)
+	$('.form-group:nth-child(3) label').html(lang.senhaLbl)
+	$('.form-group:nth-child(4) label').html(lang.ConfsenhaLbl)
+	$('#nome').attr('placeholder', lang.nome)
+	$('#username').attr('placeholder', lang.username)
+	$('#senha').attr('placeholder', lang.senha)
+	$('#Confsenha').attr('placeholder', lang.Confsenha)
+	$('#cadastrar').html(lang.cadastrar);
+	$('#tituloCadastro').html(lang.tituloCadastro);
+	$('#btnCadastrar').html(lang.cadastrar);
 	$('#p0').html(lang.grupo);
-	$('#.voltar').html(lang.voltar);
-	$('#.comprar').html(lang.comprar);
-	for (var i=0; 0<i;i++) $('carroAd'+i+' .textoCarrosel').html(lang.carrossel[i])
+	$('#voltar').html(lang.voltar);
+	$('#comprar').html(lang.comprar);
+	// $('#carroAd0').html(lang.carrossel);
+	for (var i = 0; i < 4; i++)
+		$('#carroAd' + i).html(lang.carrossel[i]);
 }
