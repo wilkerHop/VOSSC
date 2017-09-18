@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="icon" type="image/jpg" href="./img/tico.png" sizes="16x16">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	    crossorigin="anonymous">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/lang/indexLang.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<!-- Navbar -->
+		<nav class="navbar navbar-default" role="navigation">
+			<!-- Nav para mobile -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">VOSSC</a>
+				<a class="navbar-brand" id="traduzir" href="#"><i class="fa fa-language" aria-hidden="true"></i></a>
+			</div>
+			<!-- /Nav para mobile -->
+
+			<!-- Nav para large devices -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<!-- <li class="active"><a href="#">Produtos</a></li> -->
+					<li><a id="cadastrar" data-toggle="modal" href='#modal-id4'>Cadastrar</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="carrinho.html">
+							<!-- icone do carrinho -->
+							<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="entrar">Entrar <span class="caret"></span></a>
+						<ul id="login-dp" class="dropdown-menu">
+							<li>
+								<div class="row">
+									<div class="col-md-12">
+										<form class="form" role="form" method="post" action="usuario.html" accept-charset="UTF-8" id="login-nav">
+											<div class="form-group">
+												<label class="sr-only" for="exampleInputEmail2" id="emailEntrar">Endereço de Email</label>
+												<input type="email" class="form-control" id="emailEntrarPlace" placeholder="Seu Email" required>
+											</div>
+											<div class="form-group">
+												<label class="sr-only" for="exampleInputPassword2" id="senhaEntrar">Senha</label>
+												<input type="password" class="form-control" id="senhaEntrarPlace" placeholder="Sua Senha" required>
+												<div class="help-block text-right"><a href="#" id="esqueceu">Esqueceu sua senha ?</a></div>
+											</div>
+											<div class="form-group">
+												<a href="usuario.html"><button type="submit" class="btn btn-primary btn-block" id="btnEntrar">Entrar</button></a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Busca" id="busca">
+					</div>
+					<a href="resultado.html" class="btn btn-default"><i class="fa fa-search"></i></a>
+				</form>
+			</div>
+			<!-- /.navbar-collapse -->
+		</nav>
+
+
+		<h1 id="titulo" class="text-center"><!--Sis<img src="img/t.png" alt="t">ema de Vendas--></h1>
+
+		<div class="container">
+			<!-- carrossel advertise -->
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<p class="textoCarrosel" id="carroAd0"><!-- <span class="azulEscuro">Nova Linha <span class="azulClaro">Azul</span><br> Confira Já</span>--></p>
+						<img src="img/carrossel/0.png">
+					</div>
+
+					<div class="item">
+						<p class="textoCarrosel" id="carroAd1"><!-- <span class="branco">Confira nossa nova linha <br> de Tênis</span>--></p>
+						<img src="img/carrossel/1.png">
+					</div>
+
+					<div class="item">
+						<p class="textoCarrosel" id="carroAd2"><!--<span class="violeta">Novidade</span><br> <span class="rosa">Linha Rosa</span>--></p>
+						<img src="img/carrossel/2.png">
+					</div>
+
+					<div class="item">
+						<p class="textoCarrosel" id="carroAd3"><!--<span class="direita branco">Sapatos para todos <br> os gostos</span>--></p>
+						<img src="img/carrossel/3.png">
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+			</div>
+			<!-- /carrosel advertise -->
+		</div>
+		<br>
+		<div class="row" id="vitrineGrande">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 saiba" id="saiba1">
+				<img src="img/produtoAzulGrande.gif" class="imgSaiba img-responsive" alt="Image">
+				<span id="saibaMaisBtn1" class="text-center">Sapato Luxo Azul: <br><a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Saiba Mais</a></span>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 saiba" id="saiba2">
+				<img src="img/produtoMagentaGrande.gif" class="imgSaiba img-responsive" alt="Image">
+				<span id="saibaMaisBtn2" class="text-center">Sapato Luxo Magenta: <br><a class="btn btn-primary" data-toggle="modal" href='#modal-id2'>Saiba Mais</a></span>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 saiba" id="saiba3">
+				<img src="img/produtoBrancoGrande.gif" class="imgSaiba img-responsive" alt="Image">
+				<span id="saibaMaisBtn3" class="text-center">Sapato Luxo Branco: <br><a class="btn btn-primary" data-toggle="modal" href='#modal-id3'>Saiba Mais</a></span>
+			</div>
+		</div>
+		<div class="row" id="vitrineCarrossel">
+
+			<div id="carousel-id" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item text-center active">
+						<a class="btn" data-toggle="modal" href='#modal-id'><img src="img/produtoAzul.gif" class="imgSaiba img-responsive" alt="Image"></a>
+					</div>
+					<div class="item text-center">
+						<a class="btn" data-toggle="modal" href='#modal-id2'><img src="img/produtoMagenta.gif" class="imgSaiba img-responsive" alt="Image"></a>
+					</div>
+					<div class="item text-center">
+						<a class="btn" data-toggle="modal" href='#modal-id3'><img src="img/produtoBranco.gif" class="imgSaiba img-responsive" alt="Image"></a>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#carousel-id" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				<a class="right carousel-control" href="#carousel-id" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Footer -->
+	<footer class="container-fluid bg-4 text-center">
+		<p id="p0">Grupo DOORS</p>
+		<p>Leonardo Ruiz Orabona - RM77707 | Poliana Nascimento Ferreira - RM77800</p>
+		<p>Thiago Yuzo - RM78035 | Wilker Ramalho - RM79489 | Raira Carvalho - RM78375</p>
+
+		<div class="row">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<img src="img/fiap.jpg" class="img-responsive" alt="fiap">
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<img src="img/tsystems.png" class="img-responsive" alt="tsystems">
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+
+		</div>
+
+	</footer>
+
+	<div id="descProduto" class="container">
+
+		<div class="modal fade" id="modal-id">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 id="tituloModal1" class="modal-title">Produto Luxo Azul</h4>
+					</div>
+					<div class="modal-body" id="modalContent1">
+						<img src="img/produtoAzul.gif" class="img-responsive" alt="Image">
+						<p>Sapato de couro sintetico, de cor azul clara, interior revestido de pelica macia para o seu maximo conforto.</p>
+						<p>Projetado para se encaixar perfeitamente ao seus pés de forma que você fique sempre confortavel e pronta para seu dia-a-dia.</p>
+						<p>Solado em madeira de reflorestamento, leve e envernizado para maior brilho e conservação do material.</p>
+						<p>Peso: 200 gramas por peça.</p>
+						<p>Conteúdo do pacote: 1 par de sapatos luxo Azul.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary comprar flutuaDireita">Comprar</button>
+						<input type="number" name="" id="quant1" class="form-control saibaQuant flutuaDireita" value="" min="1" max="" step="" required="required" title="">
+						<button type="button" class="btn btn-default voltar flutuaDireita" data-dismiss="modal">Voltar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal-id2">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 id="tituloModal2" class="modal-title">Produto Luxo Magenta</h4>
+					</div>
+					<div class="modal-body" id="modalContent2">
+						<img src="img/produtoMagenta.gif" class="img-responsive" alt="Image">
+						<p>Sapato de couro sintetico, de cor Magenta, interior revestido de pelica macia para o seu maximo conforto.</p>
+						<p>Projetado para se encaixar perfeitamente ao seus pés de forma que você fique sempre confortavel e pronta para seu dia-a-dia.</p>
+						<p>Solado em madeira de reflorestamento, leve e envernizado para maior brilho e conservação do material.</p>
+						<p>Peso: 350 gramas por peça.</p>
+						<p>Conteúdo do pacote: 1 par de sapatos luxo Magenta.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary comprar flutuaDireita">Comprar</button>
+						<input type="number" name="" id="quant2" class="form-control saibaQuant flutuaDireita" value="" min="1" max="" step="" required="required" title="">
+						<button type="button" class="btn btn-default voltar flutuaDireita" data-dismiss="modal">Voltar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal-id3">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 id="tituloModal3" class="modal-title">Produto Luxo Branco</h4>
+					</div>
+					<div class="modal-body" id="modalContent3">
+
+						<img src="img/produtoBranco.gif" class="img-responsive" alt="Image">
+						<p>Sapato de couro sintetico, de cor Branca, interior revestido de pelica macia para o seu maximo conforto.</p>
+						<p>Projetado para se encaixar perfeitamente ao seus pés de forma que você fique sempre confortavel e pronta para seu dia-a-dia.</p>
+						<p>Solado em madeira de reflorestamento, leve e envernizado para maior brilho e conservação do material.</p>
+						<p>Peso: 150 gramas por peça.</p>
+						<p>Conteúdo do pacote: 1 par de sapatos luxo Branco.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary comprar flutuaDireita">Comprar</button>
+						<input type="number" name="" id="quant3" class="form-control saibaQuant flutuaDireita" value="" min="1" max="" step="" required="required" title="">
+						<button type="button" class="btn btn-default voltar flutuaDireita" data-dismiss="modal">Voltar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal-id4">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" id="formCadastroClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="tituloCadastro">Cadastro Novo Usuario:</h4>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class='form-group'>
+								<label for='nome' id="nomeLbl">Nome:</label>
+								<input type="text" id="nome" class="form-control" placeholder="Coloque o seu nome aqui"> <span id="erroNome" class="erro"></span><br/>
+							</div>
+							<div class='form-group'>
+								<label for='username' id="usernameLbl">Nome de usuário:</label>
+								<input type="text" id="username" class="form-control" placeholder="Escolha seu nome de usuário"> <span id="erroLogin"
+								    class="erro"></span><br/>
+							</div>
+							<div class='form-group'>
+								<label for='senha' id="senhaLbl">Senha:</label>
+								<input type="text" id="senha" class="form-control" placeholder="Define sua senha"> <span id="erroSenha" class="erro"></span><br/>
+							</div>
+							<div class='form-group'>
+								<label for='Confsenha' id="ConfsenhaLbl">Confirme sua senha:</label>
+								<input type="text" id="Confsenha" class="form-control" placeholder="Confirme sua senha"> <span id="erroConfSenha"
+								    class="erro"></span><br/>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-default" id="btnCadastrar">Cadastrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

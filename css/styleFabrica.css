@@ -15,7 +15,20 @@ body {
 .img-responsive {
 	margin: 0 auto;
 }
-
+.fonte{
+	font-size: 1.5em;
+}
+.fonte a{
+	color: black;
+}
+.espaco{
+	margin-bottom: 6px;
+}
+.loginAzul{
+	padding: 5px;
+	max-height: 80px;
+	display: none;
+}
 .bg-4 {
 	background-color: #2f2f2f;
 	/* Black Gray */
