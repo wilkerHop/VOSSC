@@ -14,11 +14,11 @@
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/carrinhoLang.js"></script>
-    <script type="text/javascript" src="js/carrinho.js"></script>
+    <script type="text/javascript" src="js/lang/carrinhoLang.js"></script>
 </head>
 
 <body>
+    <script type="text/javascript" src="js/carrinho.js"></script>
     <div class="container">
         <!-- Navbar -->
         <nav class="navbar navbar-default" role="navigation">
@@ -50,13 +50,13 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="entrar">Ola <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a data-toggle="modal" href='#modal-id' href="#">Meus Pedidos</a></li>
-                            <li><a data-toggle="modal" href='#modal-id2' href="#">Endereço</a></li>
-                            <li><a data-toggle="modal" href='#modal-id3' href="#">Trocar Senha</a></li>
-                            <li><a data-toggle="modal" href='#modal-id4' href="#">Pagamentos</a></li>
-                            <li><a data-toggle="modal" href='#modal-id5' href="#">Lista de Desejos</a></li>
-                            <li><a data-toggle="modal" href='#modal-id6' href="#">Configurações</a></li>
-                            <li><a href="#">Sair</a></li>
+                            <li><a data-toggle="modal" href='#modal-id'><i class="glyphicon glyphicon-inbox"></i> <span id="pedidos">Meus Pedidos</span></a></li>
+                            <li><a data-toggle="modal" href='#modal-id2'><i class="glyphicon glyphicon-road"></i> <span id="endereco">Endereço</span></a></li>
+                            <li><a data-toggle="modal" href='#modal-id3'><i class="glyphicon glyphicon-asterisk"></i> <span id="senha">Trocar Senha</span></a></li>
+                            <li><a data-toggle="modal" href='#modal-id4'><i class="glyphicon glyphicon-usd"></i> <span id="pagamentos">Pagamentos</span></a></li>
+                            <li><a data-toggle="modal" href='#modal-id5'><i class="glyphicon glyphicon-list"></i> <span id="lista">Lista de Desejos</span></a></li>
+                            <li><a data-toggle="modal" href='#modal-id6'><i class="glyphicon glyphicon-wrench"></i> <span id="configuracoes">Configurações</span></a></li>
+                            <li><a href="#"> <i class="glyphicon glyphicon-log-out"></i> <span id="sair">Sair</span></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -76,6 +76,8 @@
     <div class="container conteudo">
 
         <div class="row">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10"></div>
+            
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <button type="button" class="btn btn-default" id="btn5prod">gerar 5</button>
                 <button type="button" class="btn btn-default" id="btn10prod">gerar 10</button>
@@ -84,7 +86,7 @@
         <br>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="carrinho">
-                <p align="center">Não há itens no carrinho!</p>
+                <p id='carrinhoVazio' class="text-center">Não há itens no carrinho!</p>
             </div>
         </div>
 		<div class="modal fade" id="id1">
