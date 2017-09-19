@@ -49,7 +49,7 @@ $(() => {
 		}
 		corpo += "<button type='button' class='btn btn-default btns finalizar'>Finalizar Compra</button>"
 		$('#carrinho').html(corpo);
-		funcaoTraducao(!$('#traduzir').attr('lingua'))		
+		funcaoTraducao($('#traduzir').attr('lingua'))		
 	})
 
 	$('#btn10prod').click(function () {
@@ -102,7 +102,7 @@ $(() => {
 		}
 		corpo += "<button type='button' class='btn btn-default btns finalizar'>Finalizar Compra</button>"
 		$('#carrinho').html(corpo);
-		funcaoTraducao(!$('#traduzir').attr('lingua'))
+		funcaoTraducao($('#traduzir').attr('lingua'))
 	})
 
 	$('#botEntrar').click(function () {

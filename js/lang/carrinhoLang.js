@@ -48,7 +48,7 @@ var eng = {
 
 }
 
-var lang = true;
+var lang = false;
 $(() => {
 	$('#traduzir').attr('lingua', lang)
 	$(document).ready(function () {
@@ -60,9 +60,11 @@ $(() => {
 	})
 })
 
-function funcaoTraducao(l) {
-	if (l) traduzir(eng);
-	else traduzir(port);
+function funcaoTraducao(lingua ) {
+	if (lingua === true) traduzir(port);
+	else {
+		traduzir(eng);	
+	}
 	$('#traduzir').attr('lingua', lang);
 }
 
