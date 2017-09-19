@@ -56,16 +56,13 @@ $(() => {
 	})
 	$('#traduzir').click(function () {
 		funcaoTraducao(lang);
-		debugger
 		lang = !lang;
 	})
 })
 
 function funcaoTraducao(l) {
-	debugger
 	if (l) traduzir(eng);
 	else traduzir(port);
-	console.log('bool js: ', lang)
 	$('#traduzir').attr('lingua', lang);
 }
 
