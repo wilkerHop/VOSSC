@@ -48,22 +48,23 @@ var eng = {
 
 }
 
-var lang = false;
+var lang = true;
 $(() => {
 	$('#traduzir').attr('lingua', lang)
 	$(document).ready(function () {
 		traduzir(port);
 	})
 	$('#traduzir').click(function () {
-		funcaoTraducao(lang);
 		lang = !lang;
+		funcaoTraducao(lang);
 	})
 })
 
-function funcaoTraducao(lingua ) {
-	if (lingua === true) traduzir(port);
-	else {
-		traduzir(eng);	
+function funcaoTraducao(lingua) {
+	if (lingua == 'true' || lang) {
+		traduzir(port);
+	} else {
+		traduzir(eng);
 	}
 	$('#traduzir').attr('lingua', lang);
 }
