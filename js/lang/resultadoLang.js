@@ -14,19 +14,17 @@ var port = {
 	lista: "Lista de Desejos",
 	configuracoes: "Configurações",
 	sair: "Sair",
-	magenta: 'Sapato de couro sintetico, de cor Magenta, interior revestido de pelica macia para o seu maximo conforto.',
-	ciano: 'Sapato de couro sintetico, de cor azul clara, interior revestido de pelica macia para o seu maximo conforto.',
-	branca: 'Sapato de couro sintetico, de cor Branca, interior revestido de pelica macia para o seu maximo conforto.',
-	carrinhoVazio: 'Não há itens no carrinho!',
-	exibir: 'Exibir Item',
-	excluir: 'Excluir Item',
+	magenta: "Sapato Magenta Luxo: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Saiba Mais</a>",
+	ciano: "Sapato Ciano Luxo: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Saiba Mais</a>",
+	branca: "Sapato Branco Luxo: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Saiba Mais</a>",
+	buscaVazia: 'Não há itens na busca!',
+	cadastrar: 'Cadastrar',
 	gerar: 'gerar',
 	magentaHead: 'Produto Luxo Magenta',
 	cianoHead: 'Produto Luxo Ciano',
 	brancoHead: 'Produto Luxo Branco',
 
 }
-
 var eng = {
 	busca: 'Search',
 	titulo: 'Sales sys<img src="img/t.png" alt="t">em',
@@ -43,16 +41,16 @@ var eng = {
 	lista: "Ordes",
 	configuracoes: "Settings",
 	sair: "Exit",
-	magenta: 'Synthetic leather shoe, magenta in color, soft plush interior for maximum comfort.',
-	ciano: 'Synthetic leather shoe, light blue in color, soft plush interior for maximum comfort.',
-	branca: 'Synthetic leather shoe, white in color, soft plush interior for maximum comfort.',
-	carrinhoVazio: 'There are no items in the cart!',
-	exibir: 'Show Item',
-	excluir: 'Delete Item',
+	buscaVazia: 'There are no items to search for',
+	cadastrar: 'Sign In',
 	gerar: 'generate',
 	magentaHead: 'Luxury Magenta Product',
 	cianoHead: 'Luxury Light Blue Product',
 	brancoHead: 'Luxury White Product',
+	magenta: "Magenta Luxury Shoe: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Know More</a>",
+	ciano: "Cyan Luxury Shoe: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Know More</a>",
+	branca: "White Luxury Shoe: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Know More</a>",
+	
 
 }
 
@@ -80,6 +78,7 @@ function funcaoTraducao(lingua) {
 function traduzir(lang) {
 	$('#busca').attr('placeholder', lang.busca);
 	$('#titulo').html(lang.titulo);
+	$('#cadastrar').html(lang.cadastrar);
 	$('.voltar').html(lang.voltar);
 	$('#modalContent1').html(lang.modalContent1);
 	$('#modalContent2').html(lang.modalContent2);
@@ -92,12 +91,11 @@ function traduzir(lang) {
 	$('#lista').html(lang.lista);
 	$('#configuracoes').html(lang.configuracoes);
 	$('#sair').html(lang.sair);
-	if ($('#itemCarrinho1').length) $('.magenta').html(lang.magenta);
-	if ($('#itemCarrinho2').length) $('.ciano').html(lang.ciano);
-	if ($('#itemCarrinho3').length) $('.branca').html(lang.branca);
-	if ($('#carrinhoVazio').length) $('#carrinhoVazio').html(lang.carrinhoVazio);
+	if ($('#saibaMaisBtn1').length) $('.magenta').html(lang.magenta);
+	if ($('#saibaMaisBtn2').length) $('.ciano').html(lang.ciano);
+	if ($('#saibaMaisBtn3').length) $('.branca').html(lang.branca);
+	if ($('#buscaVazia').length) $('#buscaVazia').html(lang.buscaVazia);
 	if ($('.exibir').length) $('.exibir').html(lang.exibir);
-	if ($('.excluir').length) $('.excluir').html(lang.excluir);
 	if ($('.excluir').length) $('.excluir').html(lang.excluir);
 	if ($('.gerar').length) $('.gerar').html(lang.gerar);
 	$('#tituloModal1').html(lang.magentaHead);
