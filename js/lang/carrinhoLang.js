@@ -24,6 +24,7 @@ var port = {
 	magentaHead: 'Produto Luxo Magenta',
 	cianoHead: 'Produto Luxo Ciano',
 	brancoHead: 'Produto Luxo Branco',
+	fim: 'Finalizar compra',
 
 }
 
@@ -53,7 +54,7 @@ var eng = {
 	magentaHead: 'Luxury Magenta Product',
 	cianoHead: 'Luxury Light Blue Product',
 	brancoHead: 'Luxury White Product',
-
+	fim: 'Finish it',
 }
 
 var lang = true;
@@ -81,6 +82,8 @@ function traduzir(lang) {
 	$('#busca').attr('placeholder', lang.busca);
 	$('#titulo').html(lang.titulo);
 	$('.voltar').html(lang.voltar);
+	$('.finalizar').html(lang.fim);
+	$('#p0').html(lang.grupo);
 	$('#modalContent1').html(lang.modalContent1);
 	$('#modalContent2').html(lang.modalContent2);
 	$('#modalContent3').html(lang.modalContent3);

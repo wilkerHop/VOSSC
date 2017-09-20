@@ -78,6 +78,7 @@ function funcaoTraducao(lingua) {
 function traduzir(lang) {
 	$('#busca').attr('placeholder', lang.busca);
 	$('#titulo').html(lang.titulo);
+	$('#p0').html(lang.grupo);
 	$('#cadastrar').html(lang.cadastrar);
 	$('.voltar').html(lang.voltar);
 	$('#modalContent1').html(lang.modalContent1);
