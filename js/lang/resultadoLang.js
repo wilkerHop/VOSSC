@@ -15,8 +15,8 @@ var port = {
 	configuracoes: "Configurações",
 	sair: "Sair",
 	magenta: "Sapato Magenta Luxo: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Saiba Mais</a>",
-	ciano: "Sapato Ciano Luxo: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Saiba Mais</a>",
-	branca: "Sapato Branco Luxo: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Saiba Mais</a>",
+	ciano: "Sapato Ciano Luxo: <br><a class='btn btn-primary' data-toggle='modal' href='#id2'>Saiba Mais</a>",
+	branca: "Sapato Branco Luxo: <br><a class='btn btn-primary' data-toggle='modal' href='#id3'>Saiba Mais</a>",
 	buscaVazia: 'Não há itens na busca!',
 	cadastrar: 'Cadastrar',
 	gerar: 'gerar',
@@ -48,8 +48,8 @@ var eng = {
 	cianoHead: 'Luxury Light Blue Product',
 	brancoHead: 'Luxury White Product',
 	magenta: "Magenta Luxury Shoe: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Know More</a>",
-	ciano: "Cyan Luxury Shoe: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Know More</a>",
-	branca: "White Luxury Shoe: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Know More</a>",
+	ciano: "Cyan Luxury Shoe: <br><a class='btn btn-primary' data-toggle='modal' href='#id2'>Know More</a>",
+	branca: "White Luxury Shoe: <br><a class='btn btn-primary' data-toggle='modal' href='#id3'>Know More</a>",
 	
 
 }
