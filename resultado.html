@@ -8,14 +8,14 @@
 
     <link rel="icon" type="image/jpg" href="./img/tico.png" sizes="16x16">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styleCarrinho.css">
+    <link rel="stylesheet" href="css/styleResultado.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/lang/carrinhoLang.js"></script>
-    <script type="text/javascript" src="js/carrinho.js"></script>
+    <script type="text/javascript" src="js/lang/resultadoLang.js"></script>
+    <script type="text/javascript" src="js/resultado.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,8 @@
             <!-- Nav para large devices -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-
+                    <!-- <li class="active"><a href="#">Produtos</a></li> -->
+                    <li><a id="cadastrar" data-toggle="modal" href='#modal-id4'>Cadastrar</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -48,15 +49,28 @@
                         </a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="entrar">Ola <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a data-toggle="modal" href='#modal-id'><i class="glyphicon glyphicon-inbox"></i> <span id="pedidos">Meus Pedidos</span></a></li>
-                            <li><a data-toggle="modal" href='#modal-id2'><i class="glyphicon glyphicon-road"></i> <span id="endereco">Endereço</span></a></li>
-                            <li><a data-toggle="modal" href='#modal-id3'><i class="glyphicon glyphicon-asterisk"></i> <span id="senha">Trocar Senha</span></a></li>
-                            <li><a data-toggle="modal" href='#modal-id4'><i class="glyphicon glyphicon-usd"></i> <span id="pagamentos">Pagamentos</span></a></li>
-                            <li><a data-toggle="modal" href='#modal-id5'><i class="glyphicon glyphicon-list"></i> <span id="lista">Lista de Desejos</span></a></li>
-                            <li><a data-toggle="modal" href='#modal-id6'><i class="glyphicon glyphicon-wrench"></i> <span id="configuracoes">Configurações</span></a></li>
-                            <li><a href="#"> <i class="glyphicon glyphicon-log-out"></i> <span id="sair">Sair</span></a></li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="entrar">Entrar <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form class="form" role="form" method="post" action="usuario.html" accept-charset="UTF-8" id="login-nav">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputEmail2" id="emailEntrar">Endereço de Email</label>
+                                                <input type="email" class="form-control" id="emailEntrarPlace" placeholder="Seu Email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputPassword2" id="senhaEntrar">Senha</label>
+                                                <input type="password" class="form-control" id="senhaEntrarPlace" placeholder="Sua Senha" required>
+                                                <div class="help-block text-right"><a href="#" id="esqueceu">Esqueceu sua senha ?</a></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <a href="usuario.html"><button type="submit" class="btn btn-primary btn-block" id="btnEntrar">Entrar</button></a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -69,6 +83,7 @@
             </div>
             <!-- /.navbar-collapse -->
         </nav>
+
     </div>
 
     <h1 id="titulo" class="text-center">Sis<img src="img/t.png" alt="t">ema de Vendas</h1>
@@ -84,17 +99,17 @@
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="carrinho">
-                <p id='carrinhoVazio' class="text-center">Não há itens no carrinho!</p>
-            </div>
+
+        <div id="resultado" class="row">
+            <p id='buscaVazia' class="text-center">Não há itens!</p>
         </div>
+
         <div class="modal fade" id="id1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 id="tituloModal2" class="modal-title">Produto Luxo Magenta</h4>
+                        <h4 id="tituloModal1" class="modal-title">Produto Luxo Magenta</h4>
                     </div>
                     <div class="modal-body" id="modalContent2">
                         <img src="img/produtoMagenta.gif" class="img-responsive" alt="Image">
@@ -117,13 +132,12 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 id="tituloModal1" class="modal-title">Produto Luxo Azul</h4>
+                        <h4 id="tituloModal2" class="modal-title">Produto Luxo Azul</h4>
                     </div>
                     <div class="modal-body" id="modalContent1">
                         <img src="img/produtoAzul.gif" class="img-responsive" alt="Image">
                         <p>Sapato de couro sintetico, de cor azul clara, interior revestido de pelica macia para o seu maximo
-                            conforto.
-                        </p>
+                            conforto.</p>
                         <p>Projetado para se encaixar perfeitamente ao seus pés de forma que você fique sempre confortavel e
                             pronta para seu dia-a-dia.</p>
                         <p>Solado em madeira de reflorestamento, leve e envernizado para maior brilho e conservação do material.</p>
@@ -161,8 +175,7 @@
             </div>
         </div>
     </div>
-
-
+    </div>
     <!-- Footer -->
     <footer class="container-fluid bg-4 text-center">
         <p id="p0">Grupo DOORS</p>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee|Libre+Barcode+39+Text|Lato');
+
+/*menu login*/
+
+#login-dp {
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+#login-dp .help-block {
+    font-size: 12px
+}
+
+#login-dp .bottom {
+    background-color: rgba(255, 255, 255, .8);
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 14px;
+}
+
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+.fonte {
+    font-family: 'Lato', sans-serif;
+}
+
+.prodResultado {
+    height: 300px;
+    padding: 1px 5px;
+    position: relative;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    margin-bottom: 10px;
+}
+
+.caixa {
+    margin: auto 0;
+    padding: 20px;
+    height: 298px;
+    background-color: #fff;
+}
+
+
+/* width da img do carrossel */
+
+.item img {
+    width: 100%;
+}
+
+.center {
+    width: 150px;
+    margin: 40px auto;
+}
+
+#titulo {
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 50px;
+}
+
+
+/* Espaçamento no container */
+
+.container-fluid {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+
+/* fundo do footer */
+
+.bg-4 {
+    background-color: #2f2f2f;
+    /* Black Gray */
+    color: #fff;
+    font-family: 'Handlee', cursive;
+    font-size: 16px;
+}
+
+
+/* conf da pag em mobile */
+
+@media screen and (max-width: 768px) {
+    .conteudo {
+        min-height: 300px;
+    }
+    #titulo {
+        font-family: 'Libre Barcode 39 Text', cursive;
+        font-size: 30px;
+    }
+    #login-dp {
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom {
+        background-color: inherit;
+        border-top: 0 none;
+    }
+    .btnProduto {
+        padding: 0px;
+    }
+    #mobile {
+        display: block;
+    }
+    #large {
+        display: none;
+    }
+}
+
+
+/* conf da pag em large device */
+
+@media screen and (min-width: 769px) {
+    .conteudo {
+        min-height: 610px;
+    }
+    #titulo {
+        font-family: 'Libre Barcode 39 Text', cursive;
+        font-size: 50px;
+    }
+    #mobile {
+        display: none;
+    }
+    #large {
+        display: block;
+    }
+}

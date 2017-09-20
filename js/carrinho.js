@@ -5,62 +5,104 @@ $(() => {
 		for (var x = 1; x < 6; x++) {
 			num = Math.floor(Math.random() * (4 - 1) + 1);
 
-			corpo += "	<div class='row'>"
+			corpo += "<div class='row'id='itemCarrinho" + num + "'>"
 			corpo += "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 itemCarrinho'>"
-			corpo += "<div class='col-xs-3 col-sm-3 col-md-3 col-lg-3 imgProduto prodCarrinho'>"
-			corpo += "<img src='img/"+num+".gif' width='260px' height='150px;' alt='produto no carrinho'>"
+			corpo += "<div class='col-xs-4 col-sm-4 col-md-3 col-lg-3 imgProduto prodCarrinho'>"
+			corpo += "<img src='img/" + num + ".gif' class='img-responsive' alt='produto no carrinho'>"
 			corpo += "</div>"
-			corpo += "<div class='col-xs-7 col-sm-7 col-md-7 col-lg-7 descProduto prodCarrinho'>"
+			corpo += "<div class='col-xs-8 col-sm-8 col-md-7 col-lg-7 descProduto prodCarrinho'>"
 			if (num == 1) {
-				corpo += "<p class='paragrafo'>Sapato de couro sintetico, de cor Magenta, interior revestido de pelica macia para o seu maximo conforto.</p>"
+				corpo += "<p class='paragrafo magenta'>Sapato de couro sintetico, de cor Magenta, interior revestido de pelica macia para o seu maximo conforto.</p>"
 			} else if (num == 2) {
-				corpo += "<p>Sapato de couro sintetico, de cor azul clara, interior revestido de pelica macia para o seu maximo conforto.</p>"
+				corpo += "<p class='paragrafo ciano'>Sapato de couro sintetico, de cor azul clara, interior revestido de pelica macia para o seu maximo conforto.</p>"
 			} else if (num == 3) {
-				corpo += "<p>Sapato de couro sintetico, de cor Branca, interior revestido de pelica macia para o seu maximo conforto.</p>"
+				corpo += "<p class='paragrafo branca'>Sapato de couro sintetico, de cor Branca, interior revestido de pelica macia para o seu maximo conforto.</p>"
 			}
 			corpo += "</div>"
+
+			corpo += "<div id='large'>"
 			corpo += "<div class='col-xs-2 col-sm-2 col-md-2 col-lg-2 btnProduto prodCarrinho'>"
-			corpo += "<button type='button' class='btn btn-default btns'>Exibir Item</button>"
+			corpo += "<button type='button' class='btn btn-default btns exibir' data-toggle='modal' href='#id" + num + "'>Exibir Item</button>"
 			corpo += "<input type='number' name='' id='quantCarrinho' class='form-control btns' value='' min='1' max='' step='' required='required' title=''>"
-			corpo += "<button type='button' class='btn btn-danger btns'>Excluir Item</button>"
+			corpo += "<button type='button' class='btn btn-danger btns excluir'>Excluir Item</button>"
 			corpo += "</div>"
+			corpo += "</div>"
+
+			corpo += "<div id='mobile'>"
+			corpo += "<div class='row btnProduto prodCarrinho'>"
+
+			corpo += "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4'>"
+			corpo += "<button type='button' class='btn btn-default btns exibir' data-toggle='modal' href='#id" + num + "'>Exibir Item</button>"
+			corpo += "</div>"
+			corpo += "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4'>"
+			corpo += "<input type='number' name='' id='quantCarrinho' class='form-control btns' value='' min='1' max='' step='' required='required' title=''>"
+			corpo += "</div>"
+			corpo += "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4'>"
+			corpo += "<button type='button' class='btn btn-danger btns excluir'>Excluir Item</button>"
+			corpo += "</div>"
+			corpo += "</div>"
+			corpo += "</div>"
+
 			corpo += "</div>"
 			corpo += "</div>"
 			corpo += "<br>"
 		}
-			$('#carrinho').html(corpo);
-		})
-	
+		corpo += "<button type='button' class='btn btn-default btns finalizar'>Finalizar Compra</button>"
+		$('#carrinho').html(corpo);
+		funcaoTraducao($('#traduzir').attr('lingua'))
+	})
+
 	$('#btn10prod').click(function () {
 		var corpo = "";
 		var num = 0;
 		for (var x = 1; x < 11; x++) {
 			num = Math.floor(Math.random() * (4 - 1) + 1);
 
-			corpo += "	<div class='row'>"
+			corpo += "<div class='row' id='itemCarrinho" + num + "'>"
 			corpo += "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 itemCarrinho'>"
-			corpo += "<div class='col-xs-3 col-sm-3 col-md-3 col-lg-3 imgProduto prodCarrinho'>"
-			corpo += "<img src='img/"+num+".gif' width='260px' height='150px;' alt='produto no carrinho'>"
+			corpo += "<div class='col-xs-4 col-sm-4 col-md-3 col-lg-3 imgProduto prodCarrinho'>"
+			corpo += "<img src='img/" + num + ".gif' class='img-responsive' alt='produto no carrinho'>"
 			corpo += "</div>"
-			corpo += "<div class='col-xs-7 col-sm-7 col-md-7 col-lg-7 descProduto prodCarrinho'>"
+			corpo += "<div class='col-xs-8 col-sm-8 col-md-7 col-lg-7 descProduto prodCarrinho'>"
 			if (num == 1) {
-				corpo += "<p class='paragrafo'>Sapato de couro sintetico, de cor Magenta, interior revestido de pelica macia para o seu maximo conforto.</p>"
+				corpo += "<p class='paragrafo magenta'>Sapato de couro sintetico, de cor Magenta, interior revestido de pelica macia para o seu maximo conforto.</p>"
 			} else if (num == 2) {
-				corpo += "<p>Sapato de couro sintetico, de cor azul clara, interior revestido de pelica macia para o seu maximo conforto.</p>"
+				corpo += "<p class='paragrafo ciano'>Sapato de couro sintetico, de cor azul clara, interior revestido de pelica macia para o seu maximo conforto.</p>"
 			} else if (num == 3) {
-				corpo += "<p>Sapato de couro sintetico, de cor Branca, interior revestido de pelica macia para o seu maximo conforto.</p>"
+				corpo += "<p class='paragrafo branca'>Sapato de couro sintetico, de cor Branca, interior revestido de pelica macia para o seu maximo conforto.</p>"
 			}
 			corpo += "</div>"
+
+			corpo += "<div id='large'>"
 			corpo += "<div class='col-xs-2 col-sm-2 col-md-2 col-lg-2 btnProduto prodCarrinho'>"
-			corpo += "<button type='button' class='btn btn-default btns'>Exibir Item</button>"
+			corpo += "<button type='button' class='btn btn-default btns exibir' data-toggle='modal' href='#id" + num + "'>Exibir Item</button>"
 			corpo += "<input type='number' name='' id='quantCarrinho' class='form-control btns' value='' min='1' max='' step='' required='required' title=''>"
+			corpo += "<button type='button' class='btn btn-danger btns excluir'>Excluir Item</button>"
+			corpo += "</div>"
+			corpo += "</div>"
+
+			corpo += "<div id='mobile'>"
+			corpo += "<div class='row btnProduto prodCarrinho'>"
+
+			corpo += "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4'>"
+			corpo += "<button type='button' class='btn btn-default btns'  data-toggle='modal' href='#id" + num + "'>Exibir Item</button>"
+			corpo += "</div>"
+			corpo += "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4'>"
+			corpo += "<input type='number' name='' id='quantCarrinho' class='form-control btns' value='' min='1' max='' step='' required='required' title=''>"
+			corpo += "</div>"
+			corpo += "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4'>"
 			corpo += "<button type='button' class='btn btn-danger btns'>Excluir Item</button>"
 			corpo += "</div>"
 			corpo += "</div>"
 			corpo += "</div>"
+
+			corpo += "</div>"
+			corpo += "</div>"
 			corpo += "<br>"
 		}
+		corpo += "<button type='button' class='btn btn-default btns finalizar'>Finalizar Compra</button>"
 		$('#carrinho').html(corpo);
+		funcaoTraducao($('#traduzir').attr('lingua'))
 	})
 
 	$('#botEntrar').click(function () {
