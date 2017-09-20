@@ -75,9 +75,9 @@ $(() => {
 
 			corpo += "<div id='large'>"
 			corpo += "<div class='col-xs-2 col-sm-2 col-md-2 col-lg-2 btnProduto prodCarrinho'>"
-			corpo += "<button type='button' class='btn btn-default btns' data-toggle='modal' href='#id" + num + "'>Exibir Item</button>"
+			corpo += "<button type='button' class='btn btn-default btns exibir' data-toggle='modal' href='#id" + num + "'>Exibir Item</button>"
 			corpo += "<input type='number' name='' id='quantCarrinho' class='form-control btns' value='' min='1' max='' step='' required='required' title=''>"
-			corpo += "<button type='button' class='btn btn-danger btns'>Excluir Item</button>"
+			corpo += "<button type='button' class='btn btn-danger btns excluir'>Excluir Item</button>"
 			corpo += "</div>"
 			corpo += "</div>"
 
