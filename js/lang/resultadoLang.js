@@ -91,9 +91,9 @@ function traduzir(lang) {
 	$('#lista').html(lang.lista);
 	$('#configuracoes').html(lang.configuracoes);
 	$('#sair').html(lang.sair);
-	if ($('#saibaMaisBtn1').length) $('.magenta').html(lang.magenta);
-	if ($('#saibaMaisBtn2').length) $('.ciano').html(lang.ciano);
-	if ($('#saibaMaisBtn3').length) $('.branca').html(lang.branca);
+	if ($('.saibaMaisBtn1').length) $('.saibaMaisBtn1').html(lang.magenta);
+	if ($('.saibaMaisBtn2').length) $('.saibaMaisBtn2').html(lang.ciano);
+	if ($('.saibaMaisBtn3').length) $('.saibaMaisBtn3').html(lang.branca);
 	if ($('#buscaVazia').length) $('#buscaVazia').html(lang.buscaVazia);
 	if ($('.exibir').length) $('.exibir').html(lang.exibir);
 	if ($('.excluir').length) $('.excluir').html(lang.excluir);
