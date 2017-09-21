@@ -6,7 +6,13 @@ var port = {
 	modalContent1: "<img src='img/produtoAzul.gif' class='img-responsive' alt='Image'><p>Sapato de couro sintetico, de cor azul clara, interior revestido de pelica macia para o seu maximo conforto.</p><p>Projetado para se encaixar perfeitamente ao seus pés de forma que você fique sempre confortavel e pronta para seu dia-a-dia.</p><p>Solado em madeira de reflorestamento, leve e envernizado para maior brilho e conservação do material.</p><p>Peso: 200 gramas por peça.</p><p>Conteúdo do pacote: 1 par de sapatos luxo Azul.</p>",
 	modalContent2: "<img src='img/produtoMagenta.gif' class='img-responsive' alt='Image'> <p>Sapato de couro sintetico, de cor Magenta, interior revestido de pelica macia para o seu maximo conforto.</p><p>Projetado para se encaixar perfeitamente ao seus pés de forma que você fique sempre confortavel e pronta para seu dia-a-dia.</p><p>Solado em madeira de reflorestamento, leve e envernizado para maior brilho e conservação do material.</p><p>Peso: 350 gramas por peça.</p><p>Conteúdo do pacote: 1 par de sapatos luxo Magenta.</p>",
 	modalContent3: "<img src='img/produtoBranco.gif' class='img-responsive' alt='Image'><p>Sapato de couro sintetico, de cor Branca, interior revestido de pelica macia para o seu maximo conforto.</p><p>Projetado para se encaixar perfeitamente ao seus pés de forma que você fique sempre confortavel e pronta para seu dia-a-dia.</p><p>Solado em madeira de reflorestamento, leve e envernizado para maior brilho e conservação do material.</p><p>Peso: 150 gramas por peça.</p><p>Conteúdo do pacote: 1 par de sapatos luxo Branco.</p>",
-	entrar: "Olá <span class='caret'>",
+	entrar: "Entrar <span class='caret'>",
+	emailEntrar: 'Endereço de Email',
+	emailEntrarPlace: 'Seu email',
+	senhaEntrar: 'Senha',
+	senhaEntrarPlace: 'Sua senha',
+	esqueceu: 'Esqueceu sua senha ?',
+	entrar: 'Entrar',
 	pedidos: "Meus Pedidos",
 	endereco: "Endereço",
 	senha: "Trocar Senha",
@@ -33,7 +39,13 @@ var eng = {
 	modalContent1: "<img src='img/produtoAzul.gif' class='img-responsive' alt='Image'><p>Synthetic leather shoe, light blue in color, soft plush interior for maximum comfort.</p><p>Designed to fit perfectly to your feet so that you are always comfortable and ready for your day-to-day life.</p><p>Wood flooring for reforestation, light and varnished for greater gloss and conservation of material.</p><p>Weight: 250 grams per piece.</p><p>Package Contents: 1 pair of Light Blue luxury shoes.</p>",
 	modalContent2: "<img src='img/produtoMagenta.gif' class='img-responsive' alt='Image'> <p>Synthetic leather shoe, magenta in color, soft plush interior for maximum comfort.</p><p>Designed to fit perfectly to your feet so that you are always comfortable and ready for your day-to-day life.</p><p>Wood flooring for reforestation, light and varnished for greater gloss and conservation of material.</p><p>Weight: 350 grams per piece.</p><p>Package Contents: 1 pair of Magenta luxury shoes.</p>",
 	modalContent3: "<img src='img/produtoBranco.gif' class='img-responsive' alt='Image'><p>Synthetic leather shoe, white in color, soft plush interior for maximum comfort.</p><p>Designed to fit perfectly to your feet so that you are always comfortable and ready for your day-to-day life.</p><p>Wood flooring for reforestation, light and varnished for greater gloss and conservation of material.</p><p>Weight: 150 grams per piece.</p><p>Package Contents: 1 pair of White luxury shoes.</p>",
-	entrar: "Hi <span class='caret'>",
+	entrar: "Login <span class='caret'>",
+	emailEntrar: 'Email Address',
+	emailEntrarPlace: 'Your email',
+	senhaEntrar: 'Password',
+	senhaEntrarPlace: 'Your password',
+	esqueceu: 'Forgot your password ?',
+	entrar: 'Login',
 	pedidos: "My Orders",
 	endereco: "Address",
 	senha: "Change Passwords",
@@ -85,6 +97,12 @@ function traduzir(lang) {
 	$('#modalContent2').html(lang.modalContent2);
 	$('#modalContent3').html(lang.modalContent3);
 	$('#entrar').html(lang.entrar);
+	$('#emailEntrar').html(lang.emailEntrar);
+	$('#emailEntrarPlace').attr('placeholder', lang.emailEntrarPlace);
+	$('#senhaEntrarPlace').attr('placeholder', lang.senhaEntrarPlace);
+	$('#senhaEntrar').html(lang.senhaEntrar);
+	$('#esqueceu').html(lang.esqueceu);
+	$('#btnEntrar').html(lang.entrar);
 	$('#pedidos').html(lang.pedidos);
 	$('#endereco').html(lang.endereco);
 	$('#senha').html(lang.senha);
