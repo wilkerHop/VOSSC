@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee|Libre+Barcode+39+Text');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/*menu login*/
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btnMenu{
+	height: 100px;
+	background-color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 4%;
+	margin-left: 4%;
+	-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	font-size: 1.4em;
+	border-radius: 0px;
+	text-align: left;
+}
+.fonte{
+	font-family: 'Lato', sans-serif;
+}
+.itemCarrinho{
+	-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+}
+.imgProduto{
+	top: 5px;
+	padding: 5px;
+	max-height: 150px;
+}
+.descProduto{
+	top: 5px;
+	max-height: 150px;
+	padding: 5px;
+	overflow: auto;
+}
+.btnProduto{
+	top: 5px;
+	max-height: 150px;
+}
+.btns{
+	width: 100%;
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+.finalizar{
+	height: 100px;
+}
+.conteudo{
+	min-height: 700px;	 
+}
+.prodCarrinho{
+	height: 160px;
+	margin-bottom: 5px;
+}
+
+/* width da img do carrossel */
+.item img{ width:100%; }
+
+.center{
+	width: 150px;
+	margin: 40px auto; 
+}
+.satuaDireita{
+	margin-right: 6px;
+	float: right;
+}
+#teste{
+	margin: 0 auto; 
+}
+
+#titulo{
+	font-family: 'Libre Barcode 39 Text', cursive;
+	font-size: 50px;
+}
+/* Espaçamento no container */
+.container-fluid{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+/* texto interno do carrosel e suas cores */
+.textoCarrosel{
+	position: absolute;
+	width: 100%;
+	font-size: 3.9em;
+	font-weight: bold;
+	text-align: center;
+}
+.azulEscuro{
+	color: #001c27;
+}
+.azulClaro{
+	color: #01b6fc;
+}
+.branco{
+	color: white;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.violeta{
+	font-size: 65px;
+	color: #7200d2;
+}
+.rosa{
+	font-size: 55px;
+	color: #ff00a8;
+}
+.direita{
+	float: right;
+	margin-right: 50px;
+	text-shadow: 0px 0 0 #efe;
+}
+/* posiciona os btn saiba mais */
+.saiba span{
+	position: absolute;
+	top: 380px;
+	left: 0;
+	width: 100%;
+	/* display: none; */
+}
+#testeRow{
+	display: block;
+	z-index: 3;
+}
+.img-responsive{
+	margin: 0 auto;
+}
+
+/* fundo do footer */
+.bg-4{
+	background-color: #2f2f2f;
+	/* Black Gray */
+	color: #fff;
+	font-family: 'Handlee', cursive;
+	font-size: 16px;
+}
+
+/* conf da pag em mobile */
+@media screen and (max-width: 768px){
+	.conteudo {
+        min-height: 300px;
+    }
+	#titulo{
+		font-family: 'Libre Barcode 39 Text', cursive;
+		font-size: 30px;
+	}
+	#login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+	}
+	.btnProduto{
+		padding: 0px;
+	}
+	#mobile{
+		display: block;
+	}
+	#large{
+		display: none;
+	}
+}
+
+/* conf da pag em large device */
+@media screen and (min-width: 769px){
+	.conteudo {
+        min-height: 610px;
+    }
+	#titulo{
+		font-family: 'Libre Barcode 39 Text', cursive;
+		font-size: 50px;
+	}
+	#mobile{
+		display: none;
+	}
+	#large{
+		display: block;
+	}
+}
