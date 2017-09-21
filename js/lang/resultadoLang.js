@@ -45,7 +45,7 @@ var eng = {
 	cadastrar: 'Sign In',
 	gerar: 'generate',
 	magentaHead: 'Luxury Magenta Product',
-	cianoHead: 'Luxury Light Blue Product',
+	cianoHead: 'Luxury Cyan Product',
 	brancoHead: 'Luxury White Product',
 	magenta: "Magenta Luxury Shoe: <br><a class='btn btn-primary' data-toggle='modal' href='#id1'>Know More</a>",
 	ciano: "Cyan Luxury Shoe: <br><a class='btn btn-primary' data-toggle='modal' href='#id2'>Know More</a>",

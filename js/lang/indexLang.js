@@ -72,8 +72,7 @@ var eng = {
 		'<span class="violeta">News !!</span><br> <span class="rosa">Magenta Brand</span>',
 		'<span class="direita branco">Shoes for each of <br> the tastes</span>'
 	],
-	magentaHead: 'Luxury Magenta Product',
-	cianoHead: 'Luxury Light Blue Product',
+	magentaHead: 'LuxurCyan Product',
 	brancoHead: 'Luxury White Product',
 
 }
@@ -125,8 +124,8 @@ function traduzir(lang) {
 	// $('#carroAd0').html(lang.carrossel);
 	for (var i = 0; i < 4; i++)
 		$('#carroAd' + i).html(lang.carrossel[i]);
-	$('#tituloModal1').html(lang.magentaHead);
-	$('#tituloModal2').html(lang.cianoHead);
+	$('#tituloModal1').html(lang.cianoHead);
+	$('#tituloModal2').html(lang.magentaHead);
 	$('#tituloModal3').html(lang.brancoHead);
 
 }

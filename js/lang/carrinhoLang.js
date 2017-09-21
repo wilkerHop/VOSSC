@@ -52,7 +52,7 @@ var eng = {
 	excluir: 'Delete Item',
 	gerar: 'generate',
 	magentaHead: 'Luxury Magenta Product',
-	cianoHead: 'Luxury Light Blue Product',
+	cianoHead: 'Luxury Cyan Product',
 	brancoHead: 'Luxury White Product',
 	fim: 'Finish it',
 }
@@ -103,8 +103,8 @@ function traduzir(lang) {
 	if ($('.excluir').length) $('.excluir').html(lang.excluir);
 	if ($('.excluir').length) $('.excluir').html(lang.excluir);
 	if ($('.gerar').length) $('.gerar').html(lang.gerar);
-	$('#tituloModal1').html(lang.magentaHead);
-	$('#tituloModal2').html(lang.cianoHead);
+	$('#tituloModal1').html(lang.cianoHead);
+	$('#tituloModal2').html(lang.magentaHead);
 	$('#tituloModal3').html(lang.brancoHead);
 
 }
